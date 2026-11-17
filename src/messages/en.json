@@ -184,6 +184,15 @@
         "belt": "Rank belt",
         "drawstring": "Drawstring waist",
         "pants": "Ripstop pants"
+      },
+      "zoomHint": "Hover to zoom",
+      "notes": {
+        "label": "Woven collar label with your brand name, stitched in so it never peels or fades.",
+        "embroidery": "Chest logo in dense embroidery, colour-matched to your academy artwork.",
+        "fabric": "Pearl-weave cotton jacket: light, strong and soft, woven on our own looms.",
+        "belt": "Rank belt in tough gi fabric, with stitched rows that keep it flat and firm.",
+        "drawstring": "Rope drawstring through reinforced eyelets, so the pants stay put in every roll.",
+        "pants": "Ripstop pants: light, quick-drying and tear-resistant, with reinforced knees."
       }
     },
     "uniforms": {
@@ -204,6 +213,13 @@
         "10 oz canvas",
         "Poly-cotton or 100% cotton",
         "Jackets & shorts, red and blue"
+      ],
+      "notes": [
+        "BJJ gis in pearl, gold and all-play weaves, with ripstop pants and your academy patches.",
+        "Single and double-weave judo uniforms from 450 to 700 GSM, built for hard grip work.",
+        "Karate gis in light and heavy canvas cotton, cut for kata and for kumite.",
+        "V-neck taekwondo doboks in poly-cotton, with white, black or coloured collars.",
+        "Sambo jackets with shoulder wings and matching shorts, in red and blue."
       ]
     },
     "custom": {

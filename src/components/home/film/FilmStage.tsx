@@ -7,7 +7,8 @@ import { ProductQuickView, type QuickViewProduct } from '@/components/catalog/Pr
 import { Link } from '@/i18n/navigation';
 import type { CategorySlug } from '@/lib/catalog/types';
 import { MAP_H, MAP_W, type ExportMapData } from './export-map';
-import { FABRIC_DETAILS, tileCover } from './fabric-details';
+import { FabricInspector } from './FabricInspector';
+import { FABRIC_DETAILS } from './fabric-details';
 import { CHAPTERS, useFilmTimeline, type ChapterKey } from './useFilmTimeline';
 import './film.css';
 
@@ -54,6 +55,10 @@ export function FilmStage({ data }: { data: FilmData }) {
   const hudBar = useRef<HTMLElement>(null);
   const hud = useRef<HTMLDivElement>(null);
   const [chapter, setChapter] = useState<ChapterKey>('fabric');
+  // which fabric close-up the inspector shows (moved by scrolling, or picked by the visitor)
+  const [detail, setDetail] = useState(0);
+  // which discipline card is in the spotlight in the uniforms scene (-1 = none)
+  const [spot, setSpot] = useState(-1);
   // the ring card that is "picked up": hidden in the ring while its enlarged copy is shown
   const [quick, setQuick] = useState<{ product: QuickViewProduct; card: HTMLElement } | null>(null);
   const closeQuick = useCallback(() => {
@@ -69,7 +74,7 @@ export function FilmStage({ data }: { data: FilmData }) {
     setChapter(current);
   }, []);
 
-  useFilmTimeline(root, { ringCount: data.ring.length, onProgress });
+  useFilmTimeline(root, { ringCount: data.ring.length, detailCount: FABRIC_DETAILS.length, onDetail: setDetail, onSpot: setSpot, onProgress });
 
   const disciplines = t.raw('uniforms.disciplines') as string[];
   const facts = t.raw('uniforms.facts') as string[];
@@ -101,6 +106,13 @@ export function FilmStage({ data }: { data: FilmData }) {
               <em>{t('fabric.titleB')}</em>
             </h2>
             <p className="lead mt-3.5">{t('fabric.text')}</p>
+            <div className="fi-note" aria-live="polite">
+              <p>
+                <b>{String(detail + 1).padStart(2, '0')}</b>
+                {t(`fabric.details.${FABRIC_DETAILS[detail].key}`)}
+              </p>
+              <span key={detail}>{t(`fabric.notes.${FABRIC_DETAILS[detail].key}`)}</span>
+            </div>
             <div className="gsm">
               {(
                 [
@@ -121,24 +133,14 @@ export function FilmStage({ data }: { data: FilmData }) {
               ))}
             </div>
           </div>
-          {/* spec sheet: the dress's real close-ups as a clean grid of framed tiles */}
-          <div className="in weave-pos vmid dgrid" aria-hidden>
-            {FABRIC_DETAILS.map((d, i) => (
-              <figure key={d.key} className="dg-tile">
-                <span className="dg-img">
-                  {d.src ? (
-                    // already web-sized HD webp files: served as they are, so the close-up stays crisp
-                    <Image src={d.src} alt="" fill loading="eager" unoptimized />
-                  ) : (
-                    d.tile && <span className="dg-crop" style={tileCover(d.tile)} />
-                  )}
-                </span>
-                <figcaption>
-                  <b>{String(i + 1).padStart(2, '0')}</b>
-                  {t(`fabric.details.${d.key}`)}
-                </figcaption>
-              </figure>
-            ))}
+          {/* fabric inspector: one big close-up with a magnifying lens, plus thumbnails */}
+          <div className="in weave-pos vmid dgrid">
+            <FabricInspector
+              active={detail}
+              onPick={setDetail}
+              names={FABRIC_DETAILS.map((d) => t(`fabric.details.${d.key}`))}
+              hint={t('fabric.zoomHint')}
+            />
           </div>
           <div className="in weave-pos vmid weave-slot" style={{ visibility: 'hidden' }} />
         </div>
@@ -156,8 +158,6 @@ export function FilmStage({ data }: { data: FilmData }) {
               {t('uniforms.titleA')} <em>{t('uniforms.titleB')}</em>
             </h2>
           </div>
-          {/* soft spotlight behind the gi in the "your brand" scene */}
-          <div className="brand-bg" aria-hidden />
           {/* one card per discipline; the centre one (BJJ) is the dress that travels through the film */}
           <div className="lineup">
             {data.lineup.map((item) => (
@@ -198,6 +198,15 @@ export function FilmStage({ data }: { data: FilmData }) {
             ))}
           </div>
           <div className="u-foot">
+            {/* note for the discipline that is in the spotlight while scrolling */}
+            <p className="u-note" aria-live="polite">
+              {spot >= 0 && (
+                <span key={spot}>
+                  <b>{disciplines[data.lineup[spot].discipline]}</b>
+                  {t.raw('uniforms.notes')[data.lineup[spot].discipline]}
+                </span>
+              )}
+            </p>
             <Link href="/products" className="btn pick">
               {t('uniforms.allCategories')} →
             </Link>

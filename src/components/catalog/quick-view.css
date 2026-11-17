@@ -33,8 +33,9 @@
 .qv-specs dt { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 11px; color: rgba(11, 11, 11, .55); }
 .qv-specs dd { font-weight: 600; color: var(--color-ink); text-align: right; }
 .qv-note { margin-top: 12px; font-size: 12px; line-height: 1.55; color: var(--color-text); }
-.qv-actions { margin-top: 14px; display: flex; gap: 8px; }
-.qv-actions .btn { flex: 1; padding: 11px 12px; font-size: 10.5px; }
+/* two equal buttons that always fit the panel: side by side when there is room, stacked when not */
+.qv-actions { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.qv-actions .btn { min-width: 0; padding: 11px 12px; font-size: 10.5px; }
 
 @media (max-width: 760px) {
   .qv { padding: 12px; }

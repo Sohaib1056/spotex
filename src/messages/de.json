@@ -184,6 +184,15 @@
         "belt": "Graduierungsgürtel",
         "drawstring": "Kordelzug-Bund",
         "pants": "Ripstop-Hose"
+      },
+      "zoomHint": "Zum Zoomen darüberfahren",
+      "notes": {
+        "label": "Gewebtes Kragenetikett mit Ihrem Markennamen, eingenäht, damit es nie abblättert oder verblasst.",
+        "embroidery": "Brustlogo in dichter Stickerei, farblich passend zu Ihrem Akademie-Design.",
+        "fabric": "Jacke aus Pearl-Weave-Baumwolle: leicht, robust und weich, auf eigenen Webstühlen gewebt.",
+        "belt": "Gurt aus robustem Gi-Stoff, mit Steppnähten, die ihn flach und fest halten.",
+        "drawstring": "Kordelzug durch verstärkte Ösen, damit die Hose bei jedem Rollen sitzt.",
+        "pants": "Ripstop-Hose: leicht, schnell trocknend und reißfest, mit verstärkten Knien."
       }
     },
     "uniforms": {
@@ -204,6 +213,13 @@
         "10 oz Canvas",
         "Mischgewebe oder 100 % Baumwolle",
         "Jacken & Shorts in Rot und Blau"
+      ],
+      "notes": [
+        "BJJ-Gis in Pearl-, Gold- und All-Play-Webung, mit Ripstop-Hose und Ihren Akademie-Patches.",
+        "Judoanzüge in Einfach- und Doppelwebung von 450 bis 700 GSM, gebaut für hartes Griff-Training.",
+        "Karate-Gis aus leichtem und schwerem Canvas-Baumwollstoff, geschnitten für Kata und Kumite.",
+        "Taekwondo-Doboks mit V-Ausschnitt aus Mischgewebe, mit weißem, schwarzem oder farbigem Kragen.",
+        "Sambo-Jacken mit Schulterflügeln und passenden Shorts, in Rot und Blau."
       ]
     },
     "custom": {

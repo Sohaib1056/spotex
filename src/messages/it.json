@@ -184,6 +184,15 @@
         "belt": "Cintura di grado",
         "drawstring": "Vita con coulisse",
         "pants": "Pantaloni ripstop"
+      },
+      "zoomHint": "Passa sopra per ingrandire",
+      "notes": {
+        "label": "Etichetta del colletto tessuta con il tuo marchio, cucita perché non si stacchi né sbiadisca.",
+        "embroidery": "Logo sul petto ricamato fitto, nei colori della grafica della tua accademia.",
+        "fabric": "Giacca in cotone pearl weave: leggera, robusta e morbida, tessuta sui nostri telai.",
+        "belt": "Cintura in robusto tessuto da gi, con cuciture che la tengono piatta e salda.",
+        "drawstring": "Coulisse in corda con occhielli rinforzati: i pantaloni restano a posto a ogni rotolamento.",
+        "pants": "Pantaloni ripstop: leggeri, ad asciugatura rapida e antistrappo, con ginocchia rinforzate."
       }
     },
     "uniforms": {
@@ -204,6 +213,13 @@
         "Tela 10 oz",
         "Poliestere-cotone o 100% cotone",
         "Giacche e pantaloncini rossi e blu"
+      ],
+      "notes": [
+        "Gi da BJJ in tessuto pearl, gold e all-play, con pantaloni ripstop e le patch della tua accademia.",
+        "Judogi a trama singola e doppia da 450 a 700 GSM, fatti per il lavoro di presa più duro.",
+        "Karategi in cotone canvas leggero e pesante, tagliati per kata e kumite.",
+        "Dobok da taekwondo con scollo a V in policotone, con collo bianco, nero o colorato.",
+        "Giacche da sambo con ali sulle spalle e pantaloncini abbinati, in rosso e blu."
       ]
     },
     "custom": {

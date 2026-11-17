@@ -10,34 +10,34 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 /** Chapter start times on the film timeline, in order. */
 export const CHAPTERS = [
   ['fabric', 0],
-  ['uniforms', 5.0],
-  ['custom', 9.85],
-  ['collection', 13.4],
-  ['belts', 19.25],
-  ['factory', 22.65],
-  ['export', 25.45],
+  ['uniforms', 6.95],
+  ['custom', 11.8],
+  ['collection', 15.35],
+  ['belts', 21.2],
+  ['factory', 24.6],
+  ['export', 27.4],
 ] as const;
 export type ChapterKey = (typeof CHAPTERS)[number][0];
 
 /** Extra timeline time given to the fabric close-ups; everything after the fabric scene moves by this much. */
-const DETAILS_EXTRA = 1.2;
+const DETAILS_EXTRA = 3.15;
 /** Where the close-ups start and how long each one stays. */
-const DETAILS_START = 1.15;
-const DETAILS_SLOT = 0.5;
+const DETAILS_START = 1.5;
+const DETAILS_SLOT = 0.75;
 /** Extra time for the discipline line-up, and when / how long each discipline is highlighted. */
 const LINEUP_EXTRA = 3.05;
-const LINEUP_START = 6.25;
+const LINEUP_START = 8.2;
 const LINEUP_SLOT = 0.6;
 /** Extra time for the "your brand" scene (inserted at BRAND_SHIFT_AT), and when / how often a logo spot appears. */
 const BRAND_EXTRA = 1.2;
-const BRAND_SHIFT_AT = 11.6;
-const BRAND_START = 10.55;
+const BRAND_SHIFT_AT = 13.55;
+const BRAND_START = 12.5;
 const BRAND_SLOT = 0.32;
 /** Extra time for the product ring (inserted at RING_SHIFT_AT), and the stretch in which it turns. */
 const RING_EXTRA = 2.2;
-const RING_SHIFT_AT = 16.4;
-const RING_START = 13.65;
-const RING_END = 18.55;
+const RING_SHIFT_AT = 18.35;
+const RING_START = 15.6;
+const RING_END = 20.5;
 /** Share of a line-up card's height taken by its photo (the rest is the label). */
 const LINEUP_PHOTO = 0.72;
 
@@ -63,7 +63,21 @@ const drawFrom = {
  */
 export function useFilmTimeline(
   root: RefObject<HTMLElement | null>,
-  { ringCount, onProgress }: { ringCount: number; onProgress: (progress: number, chapter: ChapterKey) => void },
+  {
+    ringCount,
+    detailCount,
+    onDetail,
+    onSpot,
+    onProgress,
+  }: {
+    ringCount: number;
+    detailCount: number;
+    /** Called with the fabric close-up to show while scrolling through the fabric scene. */
+    onDetail: (index: number) => void;
+    /** Called with the discipline card in the spotlight in the uniforms scene (-1 when none is). */
+    onSpot: (index: number) => void;
+    onProgress: (progress: number, chapter: ChapterKey) => void;
+  },
 ) {
   useGSAP(
     () => {
@@ -190,14 +204,15 @@ export function useFilmTimeline(
         .to(q('.gi-m'), { x: camX, y: camShift, scale: camScale, transformOrigin: `50% ${LINEUP_PHOTO * 100}%`, duration: 1 }, 5.4)
         // the grey card behind the gi dissolves, so the uniform stands on the clean white page
         .to(q('.gi-m .ph'), { backgroundColor: 'rgba(243, 243, 243, 0)', boxShadow: 'rgba(11, 11, 11, 0) 0px 0px 0px 0px inset', duration: 0.6 }, 5.5)
-        .to(q('.brand-bg'), { autoAlpha: 1, duration: 0.6 }, 5.6)
+        // from here the gi is a showpiece, not a link: no card behind it, no click (both undo when scrolling back)
+        .set(q('.gi-m'), { pointerEvents: 'none' }, 5.4)
+        .set(q('.gi-m .ph'), { backgroundColor: 'transparent', boxShadow: 'none' }, 6.1)
         .set(q('.s4'), { autoAlpha: 1 }, 5.8)
         .from(q('.s4 .copy > *'), { x: () => (isNarrow() ? 0 : -80), y: () => (isNarrow() ? 16 : 0), autoAlpha: 0, duration: 0.6, stagger: 0.08 }, 5.9)
 
         /* ---- collection: the gi shrinks away, the product ring spins up ---- */
         .to(q('.s4 .copy'), { x: -120, autoAlpha: 0, duration: 0.5 }, 7.4)
         .to(q('.gi-m'), { scale: 0.2, autoAlpha: 0, duration: 0.55, ease: 'power3.in' }, 7.4)
-        .to(q('.brand-bg'), { autoAlpha: 0, duration: 0.4 }, 7.4)
         .set(q('.s3, .s4'), { autoAlpha: 0 }, 7.95)
         .set(q('.s5'), { autoAlpha: 1 }, 7.95)
         .from(q('.ringwrap'), { scale: 0.4, autoAlpha: 0, duration: 0.8, ease: 'expo.out' }, 7.95)
@@ -250,23 +265,27 @@ export function useFilmTimeline(
 
       /* ---- fabric close-ups: make room after the fabric scene, then a spec-sheet grid of real details ---- */
       tl.shiftChildren(DETAILS_EXTRA, true, 2.85);
-      const tiles = q('.dg-tile');
-      // tiles pop into the grid one after another
-      tl.fromTo(tiles, { y: 40, scale: 0.9, autoAlpha: 0 }, { y: 0, scale: 1, autoAlpha: 1, duration: 0.35, stagger: 0.07, ease: 'back.out(1.6)' }, 1.05);
-      // then each detail gets the spotlight in turn: lifted, red ring, the others step back
-      tiles.forEach((_, k) => {
-        tl.to(tiles, {
-          '--on': (i: number) => (i === k ? 1 : 0),
-          y: (i) => (i === k ? -8 : 0),
-          opacity: (i) => (i === k ? 1 : 0.55),
-          duration: 0.2,
-          ease: 'power2.out',
-        }, DETAILS_START + 0.3 + k * DETAILS_SLOT * 0.4);
-      });
-      tl.to(tiles, { '--on': 0, y: 0, opacity: 1, duration: 0.2 }, DETAILS_START + 0.3 + tiles.length * DETAILS_SLOT * 0.4);
+      // the inspector pops in, then steps through the close-ups at an even pace while the visitor scrolls
+      tl.fromTo(q('.fi'), { y: 40, scale: 0.94, autoAlpha: 0 }, { y: 0, scale: 1, autoAlpha: 1, duration: 0.4, ease: 'back.out(1.6)' }, 1.05);
+      const step = { i: 0 };
+      let shown = 0;
+      tl.fromTo(
+        step,
+        { i: 0 },
+        {
+          i: detailCount - 1,
+          duration: (detailCount - 1) * DETAILS_SLOT,
+          ease: 'none',
+          onUpdate: () => {
+            const next = Math.round(step.i);
+            if (next !== shown) onDetail((shown = next));
+          },
+        },
+        DETAILS_START + DETAILS_SLOT / 2,
+      );
 
       /* ---- discipline line-up: make room, then light up each discipline from left to right ---- */
-      tl.shiftChildren(LINEUP_EXTRA, true, 6.35);
+      tl.shiftChildren(LINEUP_EXTRA, true, 8.3);
       const cards = q('.lineup .uni-in');
       cards.forEach((_, k) => {
         tl.to(cards, {
@@ -276,13 +295,36 @@ export function useFilmTimeline(
           ease: 'power2.out',
         }, LINEUP_START + k * LINEUP_SLOT);
       });
+      const spotStep = { i: 0 };
+      let spotShown = -1;
+      tl.fromTo(
+        spotStep,
+        { i: 0 },
+        {
+          i: cards.length,
+          duration: cards.length * LINEUP_SLOT,
+          ease: 'none',
+          onUpdate: () => {
+            const next = spotStep.i > 0 && spotStep.i < cards.length ? Math.floor(spotStep.i) : -1;
+            if (next !== spotShown) onSpot((spotShown = next));
+          },
+        },
+        LINEUP_START,
+      );
       // all back to normal before the centre card moves on to the custom scene
       tl.to(cards, { opacity: 1, scale: 1, duration: 0.2 }, LINEUP_START + cards.length * LINEUP_SLOT);
 
       /* ---- your brand: make room, then show where a logo can go, one spot at a time ---- */
       tl.shiftChildren(BRAND_EXTRA, true, BRAND_SHIFT_AT);
+      // two steps: the first three spots together, then the other three
       q('.place').forEach((place, k) => {
-        tl.fromTo(place, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: 'back.out(2.2)' }, BRAND_START + k * BRAND_SLOT);
+        const group = k < 3 ? 0 : 1;
+        tl.fromTo(
+          place,
+          { autoAlpha: 0, scale: 0.4 },
+          { autoAlpha: 1, scale: 1, duration: 0.25, ease: 'back.out(2.2)' },
+          BRAND_START + group * BRAND_SLOT * 1.4 + (k % 3) * 0.05,
+        );
       });
 
       /* ---- collection: make room, then the ring turns smoothly through every product ---- */
@@ -324,6 +366,6 @@ export function useFilmTimeline(
         ScrollTrigger.removeEventListener('refresh', onRefresh);
       };
     },
-    { scope: root, dependencies: [ringCount] },
+    { scope: root, dependencies: [ringCount, detailCount, onDetail, onSpot] },
   );
 }

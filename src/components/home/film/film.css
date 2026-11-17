@@ -2,7 +2,7 @@
 .film {
   --red: var(--color-brand); --red2: var(--color-brand-bright); --black: var(--color-ink);
   --line: var(--color-line); --soft: var(--color-soft);
-  position: relative; height: 2340vh;
+  position: relative; height: 2500vh;
 }
 .film h2, .film h3 { font-family: var(--font-display); font-weight: 400; text-transform: uppercase; line-height: .88; letter-spacing: .01em; color: inherit; }
 .film h2 { font-size: clamp(38px, min(7vw, 11vh), 112px); }
@@ -34,16 +34,33 @@
 .film .gsm b small { font-size: .4em; color: var(--red); margin-left: 4px; }
 .film .gsm div > span { font-size: 10.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
 .film .weave-pos { right: var(--pad); width: min(40vw, calc(100vh - var(--top) - var(--bot) - 20px)); aspect-ratio: 1; }
-/* spec sheet: real close-ups as framed white tiles in a grid (white space keeps the blue from feeling heavy) */
-.film .dgrid { opacity: 0; visibility: hidden; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-content: center; }
-.film .dg-tile { --on: 0; margin: 0; background: #fff; border-radius: 18px; padding: 8px 8px 10px; border: 1.5px solid rgba(11, 11, 11, .1);
-  box-shadow: 0 0 0 calc(var(--on) * 2.5px) var(--red), 0 calc(8px + var(--on) * 14px) calc(20px + var(--on) * 22px) rgba(0, 0, 0, calc(.06 + var(--on) * .12)); }
-.film .dg-img { position: relative; display: block; aspect-ratio: 1; border-radius: 12px; overflow: hidden; background: var(--soft); }
-.film .dg-img img { object-fit: cover; }
-.film .dg-crop { position: absolute; inset: 0; }
-.film .dg-tile figcaption { display: flex; align-items: baseline; gap: 6px; margin-top: 8px; padding: 0 2px;
-  font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; line-height: 1.25; color: var(--black); }
-.film .dg-tile figcaption b { font-family: var(--font-display); font-weight: 400; font-size: 17px; letter-spacing: .02em; color: var(--red); line-height: 1; }
+/* note beside the inspector: name + one line about the close-up on screen */
+.film .fi-note { margin-top: 14px; max-width: 480px; min-height: 66px; padding-left: 14px; border-left: 3px solid var(--red); }
+.film .fi-note p { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--black); }
+.film .fi-note p b { color: var(--red); margin-right: 6px; }
+.film .fi-note span { display: block; margin-top: 4px; font-size: 14px; line-height: 1.55; animation: fi-note-in .45s ease-out; }
+@keyframes fi-note-in { from { opacity: 0; transform: translateY(6px); } }
+
+/* fabric inspector: big close-up with a magnifying lens + thumbnail strip */
+.film .dgrid { opacity: 0; visibility: hidden; display: grid; align-items: center; pointer-events: auto; }
+.film .fi { display: grid; grid-template-columns: 1fr 64px; gap: 12px; height: 100%; }
+.film .fi-view { position: relative; border-radius: 22px; overflow: hidden; background: var(--soft); border: 2px solid var(--black); cursor: zoom-in; touch-action: none; }
+.film .fi-view img, .film .fi-thumb img { object-fit: cover; }
+.film .fi-crop { position: absolute; inset: 0; }
+.film .fi-lens { position: absolute; z-index: 3; width: 46%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; transform: translate(-50%, -50%); pointer-events: none;
+  border: 3px solid #fff; box-shadow: 0 0 0 2px var(--red), 0 18px 40px rgba(0,0,0,.35); background: var(--soft); }
+.film .fi-lens-in { position: absolute; left: 50%; top: 50%; }
+.film .fi-cap { position: absolute; left: 12px; bottom: 12px; z-index: 2; display: flex; align-items: center; gap: 8px; padding: 7px 14px 7px 8px; border-radius: 999px;
+  background: #fff; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--black); box-shadow: 0 6px 18px rgba(0,0,0,.15); }
+.film .fi-cap b { display: grid; place-items: center; min-width: 26px; height: 22px; padding: 0 6px; border-radius: 999px; background: var(--red); color: #fff;
+  font-family: var(--font-display); font-weight: 400; font-size: 14px; letter-spacing: .02em; }
+.film .fi-hint { position: absolute; top: 12px; right: 12px; z-index: 2; display: flex; align-items: center; gap: 6px; padding: 6px 12px 6px 9px; border-radius: 999px;
+  background: rgba(11,11,11,.78); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.film .fi-hint svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.film .fi-thumbs { display: grid; grid-template-rows: repeat(6, 1fr); gap: 8px; }
+.film .fi-thumb { position: relative; overflow: hidden; border-radius: 12px; background: var(--soft); border: 2px solid rgba(11,11,11,.15); cursor: pointer; transition: border-color .2s, opacity .2s; opacity: .6; }
+.film .fi-thumb:hover { opacity: 1; border-color: var(--black); }
+.film .fi-thumb[aria-pressed='true'] { opacity: 1; border-color: var(--red); box-shadow: 0 0 0 2px rgba(222,0,0,.18); }
 
 /* uniforms line-up */
 .film .s3 .head, .film .s5 .head, .film .s7 .head, .film .s8 .head { text-align: center; flex: none; }
@@ -57,7 +74,12 @@
 .film .lineup .lab { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2px; margin-top: 10px; }
 .film .lineup .lab b { font-family: var(--font-display); font-weight: 400; font-size: clamp(20px, min(1.9vw, 4vh), 30px); line-height: 1; text-transform: uppercase; }
 .film .lineup .lab small { font-size: 10.5px; font-weight: 600; line-height: 1.35; }
-.film .s3 .u-foot { flex: none; display: flex; justify-content: center; margin-top: 12px; }
+.film .s3 .u-foot { flex: none; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 10px; }
+.film .u-note { min-height: 42px; display: flex; justify-content: center; text-align: center; max-width: 900px; }
+.film .u-note span { display: inline-flex; align-items: center; gap: 0; padding: 9px 20px 9px 9px; border-radius: 999px; background: #fff;
+  border: 1.5px solid var(--black); box-shadow: 0 10px 26px rgba(0,0,0,.1); font-size: 15px; font-weight: 600; line-height: 1.35; color: var(--black);
+  animation: fi-note-in .45s ease-out; }
+.film .u-note b { flex: none; margin-right: 12px; padding: 5px 12px; border-radius: 999px; background: var(--red); color: #fff; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 
 /* custom */
 .film .s4 .copy { left: var(--pad); max-width: 540px; }
@@ -85,12 +107,6 @@
 .film .place em small { display: grid; place-items: center; height: 8px; padding: 0 2.5px; border-radius: 2px; background: var(--red); color: #fff; font-size: 4.8px; letter-spacing: .04em; }
 .film .place.r em { left: calc(5px + var(--lead)); }
 .film .place.l em { right: calc(5px + var(--lead)); }
-/* spotlight disc behind the gi in the "your brand" scene (position from CSS, GSAP only fades it) */
-.film .brand-bg { position: absolute; left: calc(50% + 20vw); top: calc((var(--top) + 100vh - var(--bot)) / 2); width: min(40vw, calc(100vh - var(--top) - var(--bot) + 20px)); aspect-ratio: 1;
-  transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, #f2f2f2 0%, #f6f6f6 55%, rgba(246,246,246,0) 71%); opacity: 0; visibility: hidden; pointer-events: none; }
-.film .brand-bg::after { content: ""; position: absolute; inset: 9%; border-radius: 50%; border: 1.5px dashed rgba(11,11,11,.12); }
-/* (the disc paints below the cards because they are positioned and come later in the DOM; don't make .lineup
-   positioned — the timeline measures the gi with offsetTop against the scene) */
 
 /* collection: 3D ring */
 .film .ringwrap { flex: 1; min-height: 0; perspective: 1600px; display: grid; place-items: center; }
@@ -185,8 +201,9 @@
   }
 
 @media (max-width: 800px) {
-  .film .brand-bg { display: none; }
   .film .place { --lead: 8px !important; }
+  .film .u-note { min-height: 54px; }
+  .film .u-note span { font-size: 12px; padding: 7px 14px 7px 7px; border-radius: 16px; text-align: left; }
   .film .place em { font-size: 4.6px; padding: 2px 5px 2px 2.5px; gap: 3px; } /* the gi is scaled up a lot on phones: short leader lines keep labels on screen */
   .film .actor { height: calc((100vh - var(--top) - var(--bot)) * .62); }
   .film .s2 .copy { top: var(--top); transform: none; right: var(--pad); }

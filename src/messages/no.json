@@ -184,6 +184,15 @@
         "belt": "Gradsbelte",
         "drawstring": "Snorlinning",
         "pants": "Ripstopbukse"
+      },
+      "zoomHint": "Hold over for å zoome",
+      "notes": {
+        "label": "Vevd kragemerke med ditt merkenavn, sydd inn så det aldri flasser eller falmer.",
+        "embroidery": "Brystlogo i tett brodering, fargetilpasset akademiets design.",
+        "fabric": "Jakke i pearl weave-bomull: lett, sterk og myk, vevd på våre egne vevstoler.",
+        "belt": "Belte i solid gi-stoff, med stikninger som holder det flatt og stivt.",
+        "drawstring": "Snøre gjennom forsterkede maljer, så buksene sitter i hver runde.",
+        "pants": "Ripstop-bukser: lette, hurtigtørkende og rivesterke, med forsterkede knær."
       }
     },
     "uniforms": {
@@ -204,6 +213,13 @@
         "10 oz canvas",
         "Polyester-bomull eller 100 % bomull",
         "Jakker og shorts i rødt og blått"
+      ],
+      "notes": [
+        "BJJ-gier i pearl-, gold- og all-play-vev, med ripstop-bukser og akademiets merker.",
+        "Judodrakter i enkel og dobbel vev fra 450 til 700 GSM, laget for hard grepstrening.",
+        "Karategier i lett og tung canvas-bomull, sydd for kata og kumite.",
+        "Taekwondo-doboker med V-hals i poly-bomull, med hvit, svart eller farget krage.",
+        "Sambojakker med skuldervinger og matchende shorts, i rødt og blått."
       ]
     },
     "custom": {
