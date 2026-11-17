@@ -3,7 +3,7 @@
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import type { RefObject } from 'react';
+import { useEffect, useState, type RefObject } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -79,8 +79,29 @@ export function useFilmTimeline(
     onProgress: (progress: number, chapter: ChapterKey) => void;
   },
 ) {
+  // Building the film (hundreds of tweens, each measuring the page) is the heaviest work on the home page.
+  // It is done only once the film is about to come into view — while the visitor is still on the hero —
+  // so opening the page stays fast.
+  const [near, setNear] = useState(false);
+  useEffect(() => {
+    const el = root.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          setNear(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: '150% 0px 150% 0px' },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [root]);
+
   useGSAP(
     () => {
+      if (!near) return;
       const el = root.current!;
       const q = gsap.utils.selector(el);
       const one = <T extends Element = HTMLElement>(sel: string) => el.querySelector<T>(sel)!;
@@ -103,22 +124,33 @@ export function useFilmTimeline(
       };
       sizeRing();
 
+      // layout reads are cached until the next refresh: dozens of tween values ask for the same boxes,
+      // and reading layout between GSAP's style writes forces a reflow each time
+      const cache = new Map<string, unknown>();
+      const once = <T,>(key: string, read: () => T) => {
+        if (!cache.has(key)) cache.set(key, read());
+        return cache.get(key) as T;
+      };
+      const px = (name: string) => once(`px:${name}`, () => cssPx(name));
+
       /* ---- where the travelling dress goes (offsets from the stage centre) ---- */
       const actorH = () => actor.offsetHeight;
       const toCentre = (r: { left: number; top: number; width: number; height: number }) => ({
         x: r.left + r.width / 2 - window.innerWidth / 2,
         y: r.top + r.height / 2 - window.innerHeight / 2,
       });
-      const slotWeave = () => {
-        const r = relRect(one('.weave-slot'), stage);
-        return { ...toCentre(r), s: (r.height * 0.96) / actorH() };
-      };
+      const slotWeave = () =>
+        once('weave', () => {
+          const r = relRect(one('.weave-slot'), stage);
+          return { ...toCentre(r), s: (r.height * 0.96) / actorH() };
+        });
       // layout box of the centre gi (offset* ignore GSAP transforms; the scene itself never moves)
-      const giBox = () => {
-        const s = relRect(one('.s3'), stage);
-        const g = one('.gi-m');
-        return { left: s.left + g.offsetLeft, top: s.top + g.offsetTop, w: g.offsetWidth, h: g.offsetHeight };
-      };
+      const giBox = () =>
+        once('gi', () => {
+          const s = relRect(one('.s3'), stage);
+          const g = one('.gi-m');
+          return { left: s.left + g.offsetLeft, top: s.top + g.offsetTop, w: g.offsetWidth, h: g.offsetHeight };
+        });
       const slotUni = () => {
         const b = giBox();
         const h = b.h * LINEUP_PHOTO;
@@ -129,22 +161,24 @@ export function useFilmTimeline(
       // phones: the gi fills the space between the copy block and the scene counter, centred in it
       const phoneFit = () => {
         const b = giBox();
-        const copy = one('.s4 .copy');
-        const top = copy.offsetTop + copy.offsetHeight + 16;
-        const bottom = window.innerHeight - cssPx('--bot') - 10;
+        const top = once('copyBottom', () => {
+          const copy = one('.s4 .copy');
+          return copy.offsetTop + copy.offsetHeight + 16;
+        });
+        const bottom = window.innerHeight - px('--bot') - 10;
         const scale = Math.min(2.1, (bottom - top) / (b.h * LINEUP_PHOTO));
         const spare = bottom - top - b.h * LINEUP_PHOTO * scale;
         return { scale, bottom: bottom - Math.max(0, spare) / 2 };
       };
       const camShift = () => {
         const b = giBox();
-        const bottom = isNarrow() ? phoneFit().bottom : window.innerHeight - cssPx('--bot') - 6;
+        const bottom = isNarrow() ? phoneFit().bottom : window.innerHeight - px('--bot') - 6;
         return bottom - (b.top + b.h * LINEUP_PHOTO);
       };
       // desktop: grow to the header
       const camScale = () => {
         const b = giBox();
-        return isNarrow() ? phoneFit().scale : Math.min(2.2, (window.innerHeight - cssPx('--bot') - cssPx('--top') - 12) / (b.h * LINEUP_PHOTO));
+        return isNarrow() ? phoneFit().scale : Math.min(2.2, (window.innerHeight - px('--bot') - px('--top') - 12) / (b.h * LINEUP_PHOTO));
       };
       const camX = () => {
         const b = giBox();
@@ -352,7 +386,10 @@ export function useFilmTimeline(
 
       // re-measure before every refresh; afterwards sweep end → start → current so
       // every "from" state is re-applied and nothing shows up before its scene
-      const onRefreshInit = () => sizeRing();
+      const onRefreshInit = () => {
+        cache.clear();
+        sizeRing();
+      };
       const onRefresh = () => {
         const p = tl.progress();
         tl.progress(1, true).progress(0, true).progress(p, true);
@@ -366,6 +403,6 @@ export function useFilmTimeline(
         ScrollTrigger.removeEventListener('refresh', onRefresh);
       };
     },
-    { scope: root, dependencies: [ringCount, detailCount, onDetail, onSpot] },
+    { scope: root, dependencies: [near, ringCount, detailCount, onDetail, onSpot] },
   );
 }

@@ -19,13 +19,15 @@ export const useLenis = () => useContext(LenisContext);
 export function SmoothScroll({ children }: { children: ReactNode }) {
   const [lenis, setLenis] = useState<Lenis | null>(null);
 
-  // Late images and web fonts change layout: re-measure every scroll scene once they are in.
+  // Web fonts change text size: re-measure the scroll scenes once, if they were still loading.
+  // (ScrollTrigger refreshes on window load by itself, and every refresh re-measures all scenes, which is costly.)
   useEffect(() => {
-    const refresh = () => ScrollTrigger.refresh();
-    if (document.readyState === 'complete') refresh();
-    else window.addEventListener('load', refresh, { once: true });
-    document.fonts?.ready.then(refresh);
-    return () => window.removeEventListener('load', refresh);
+    if (!document.fonts || document.fonts.status === 'loaded') return;
+    let alive = true;
+    document.fonts.ready.then(() => alive && ScrollTrigger.refresh());
+    return () => {
+      alive = false;
+    };
   }, []);
 
   useEffect(() => {
