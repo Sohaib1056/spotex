@@ -1,0 +1,45 @@
+/* product "pick up" view (ProductQuickView): the clicked card, enlarged, with its details beside it */
+.qv { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 20px; background: rgba(255, 255, 255, 0); }
+.qv-stage { display: flex; align-items: center; gap: 22px; max-height: calc(100dvh - 40px); }
+
+/* same design as the ring card */
+.qv-card {
+  position: relative; flex: none; height: min(72dvh, 540px); aspect-ratio: 1 / 1.38; display: flex; flex-direction: column;
+  background: #fff; border: 2px solid var(--color-ink); border-radius: 22px; overflow: hidden;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, .22); will-change: transform;
+}
+.qv-im { position: relative; height: 74%; background: var(--color-soft); border-bottom: 2px solid var(--color-ink); }
+.qv-im img { object-fit: cover; mix-blend-mode: multiply; }
+.qv-cap { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 10px 18px; }
+.qv-code { font-size: 11px; font-weight: 800; letter-spacing: .18em; color: var(--color-brand); }
+.qv-cap h3 { font-family: var(--font-display); font-size: clamp(24px, 2.4vw, 34px); line-height: 1; text-transform: uppercase; color: var(--color-ink); margin-top: 4px; }
+
+.qv-info {
+  position: relative; width: min(380px, 40vw); padding: 22px 24px 22px;
+  background: #fff; border: 1.5px solid rgba(11, 11, 11, .3); border-radius: 22px; box-shadow: 0 30px 60px rgba(0, 0, 0, .12);
+}
+.qv-close {
+  position: absolute; top: 14px; right: 14px; width: 36px; height: 36px; border-radius: 50%;
+  background: #fff; border: 1.5px solid rgba(11, 11, 11, .2); font-size: 22px; line-height: 1; color: var(--color-ink);
+  display: grid; place-items: center; cursor: pointer; transition: background-color .2s, color .2s, transform .2s;
+}
+.qv-close:hover { background: var(--color-ink); color: #fff; transform: rotate(90deg); }
+.qv-thumbs { display: flex; gap: 8px; margin-top: 12px; }
+.qv-thumbs button { position: relative; width: 44px; height: 44px; border-radius: 10px; overflow: hidden; background: var(--color-soft); border: 2px solid transparent; cursor: pointer; }
+.qv-thumbs button[aria-current='true'] { border-color: var(--color-brand); }
+.qv-thumbs img { object-fit: cover; mix-blend-mode: multiply; }
+.qv-specs { margin-top: 12px; border-top: 1.5px solid var(--color-line); }
+.qv-specs div { display: flex; justify-content: space-between; gap: 16px; padding: 7px 0; border-bottom: 1.5px solid var(--color-line); font-size: 13px; }
+.qv-specs dt { font-weight: 700; letter-spacing: .08em; text-transform: uppercase; font-size: 11px; color: rgba(11, 11, 11, .55); }
+.qv-specs dd { font-weight: 600; color: var(--color-ink); text-align: right; }
+.qv-note { margin-top: 12px; font-size: 12px; line-height: 1.55; color: var(--color-text); }
+.qv-actions { margin-top: 14px; display: flex; gap: 8px; }
+.qv-actions .btn { flex: 1; padding: 11px 12px; font-size: 10.5px; }
+
+@media (max-width: 760px) {
+  .qv { padding: 12px; }
+  .qv-stage { flex-direction: column; gap: 12px; overflow: auto; scrollbar-width: none; }
+  .qv-stage::-webkit-scrollbar { display: none; }
+  .qv-card { height: 46dvh; }
+  .qv-info { width: min(92vw, 420px); max-height: none; padding: 20px; }
+}

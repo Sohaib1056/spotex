@@ -1,0 +1,130 @@
+/* ===== Spotlight hero: pinned stage, SPOTEX logo → products with callout lines ===== */
+.spotlight { position: relative; }
+.sl-stage {
+  position: sticky; top: 0; height: 100vh; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 64%, #f6f6f6 0%, #fff 58%);
+}
+
+/* the logo word: solid at first, the letters fly apart on scroll */
+.sl-stage { --word: min(30vw, 54vh); }
+.sl-word {
+  position: absolute; left: 50%; top: 48%; transform: translate(-50%, -50%);
+  font-family: var(--font-display); font-size: var(--word); line-height: .8;
+  white-space: nowrap; letter-spacing: .01em; user-select: none; pointer-events: none;
+}
+.sl-word span { display: inline-block; color: var(--color-ink); }
+.sl-word span.x { color: var(--color-brand); }
+.sl-word i { display: inline-block; font-style: normal; opacity: 0; }
+
+/* intro lines: placed from the word's real top/bottom (its glyphs are .8 × font-size tall) */
+.sl-intro-in { position: absolute; inset: 0; pointer-events: none; animation: sl-in .9s cubic-bezier(.2,.7,.2,1) .7s both; }
+@keyframes sl-in { from { opacity: 0; transform: translateY(16px); } }
+.sl-intro { position: absolute; left: 0; right: 0; text-align: center; padding: 0 var(--pad); }
+.sl-intro-top {
+  top: max(96px, calc(48% - var(--word) * .4 - 40px));
+  font-size: clamp(10px, .95vw, 12.5px); font-weight: 800; letter-spacing: .34em; text-transform: uppercase; color: var(--color-brand);
+}
+.sl-intro-bot {
+  top: calc(48% + var(--word) * .4 + 30px);
+  display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 0;
+  list-style: none; margin: 0;
+  font-size: clamp(10.5px, .95vw, 12.5px); font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--color-ink);
+}
+.sl-intro-bot li { display: flex; align-items: center; }
+.sl-intro-bot li + li::before { content: ""; width: 6px; height: 6px; margin: 0 22px; background: var(--color-brand); transform: rotate(45deg); }
+
+.sl-cue {
+  position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  font-size: 10px; font-weight: 800; letter-spacing: .32em; text-transform: uppercase; color: #777;
+}
+.sl-cue i { width: 2px; height: 34px; background: linear-gradient(var(--color-brand), transparent); animation: sl-cue 1.6s infinite; }
+@keyframes sl-cue {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* turntable under the product */
+/* display base: a tilted disc just below the product (size and position set in JS), never behind it */
+.sl-plat { position: absolute; left: 50%; top: 80%; width: 320px; aspect-ratio: 1; opacity: 0; visibility: hidden; }
+.sl-plat i { position: absolute; border-radius: 50%; }
+.sl-plat .p1 { inset: -8%; background: radial-gradient(closest-side, rgba(0,0,0,.10), rgba(0,0,0,.04) 70%, transparent); }
+.sl-plat .p2 { inset: 4%; background: radial-gradient(circle at 50% 35%, #ffffff 0%, #f1f1f1 55%, #e4e4e4 100%); box-shadow: inset 0 0 0 1px #dedede; }
+.sl-plat .p3 { inset: 0; border: 2.5px solid transparent; border-top-color: var(--color-brand); border-right-color: var(--color-brand); animation: sl-spin 5s linear infinite; }
+.sl-plat .p4 { inset: 18%; border: 1px dashed #c9c9c9; animation: sl-spin 30s linear infinite reverse; }
+/* soft contact shadow right under the product */
+.sl-shadow { position: absolute; left: 50%; height: 16px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.22), transparent); transform: translate(-50%, -50%); opacity: 0; }
+@keyframes sl-spin { to { transform: rotate(360deg); } }
+
+.sl-prod { position: absolute; z-index: 1; left: 50%; bottom: 15vh; height: min(66vh, 660px); aspect-ratio: 1; mix-blend-mode: multiply; transform: translateX(-50%); }
+.sl-prod img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.sl-turn { position: absolute; inset: 0; transform-origin: 50% 100%; animation: sl-turn 7s ease-in-out infinite; }
+@keyframes sl-turn {
+  0%, 100% { transform: perspective(1400px) rotateY(-16deg); }
+  50% { transform: perspective(1400px) rotateY(16deg); }
+}
+@media (prefers-reduced-motion: reduce) { .sl-turn { animation: none; } }
+
+/* callouts: dot on the product, line, label beyond the product */
+.sl-co { position: absolute; z-index: 2; height: 0; pointer-events: none; } /* above the product, so dots stay white */
+.sl-co .ln { position: absolute; top: 0; left: 0; height: 1.5px; margin-top: -.75px; background: var(--color-ink); }
+.sl-co .dot { position: absolute; top: -6px; left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2.5px solid var(--color-brand); box-shadow: 0 0 0 4px rgba(255,255,255,.45), 0 2px 6px rgba(0,0,0,.25); transform: scale(0); }
+.sl-co .lb { position: absolute; width: 210px; font-size: 10.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; line-height: 1.45; opacity: 0; }
+.sl-co .lb b { display: block; font-family: var(--font-display); font-weight: 400; font-size: clamp(19px, min(1.8vw, 4vh), 26px); letter-spacing: .02em; color: var(--color-brand); line-height: 1; }
+
+/* copy (left) and product info (right) */
+.sl-copy { position: absolute; left: var(--pad); bottom: 7vh; z-index: 5; max-width: 360px; opacity: 0; visibility: hidden; }
+.sl-copy .eyebrow { font-size: 10.5px; margin-bottom: 8px; }
+.sl-copy h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(32px, min(3.6vw, 7.6vh), 70px); line-height: .92; text-transform: uppercase; color: var(--color-ink); }
+.sl-copy h1 em { font-style: normal; color: var(--color-brand); }
+.sl-copy p { margin: 10px 0 16px; font-size: 12.5px; line-height: 1.6; }
+.sl-copy .row { display: flex; gap: 8px; }
+.sl-copy .btn { padding: 11px 18px; font-size: 11px; }
+
+.sl-meta { position: absolute; right: var(--pad); bottom: 7vh; z-index: 5; text-align: right; opacity: 0; visibility: hidden; }
+.sl-meta .count { font-size: 11px; font-weight: 800; letter-spacing: .2em; margin-bottom: 8px; }
+.sl-meta .count b { color: var(--color-ink); }
+.sl-meta .code { font-size: 11px; font-weight: 800; letter-spacing: .2em; color: var(--color-brand); min-height: 1.3em; }
+.sl-meta .name { display: block; font-family: var(--font-display); font-size: clamp(28px, min(3.4vw, 7vh), 56px); line-height: .95; text-transform: uppercase; margin: 4px 0 4px; color: var(--color-ink); }
+.sl-meta .spec { font-size: 12px; font-weight: 600; margin-bottom: 12px; }
+.sl-meta .name:hover { color: var(--color-brand); }
+.sl-thumbs { display: flex; gap: 8px; justify-content: flex-end; }
+.sl-thumbs button { position: relative; width: 50px; height: 62px; border-radius: 10px; border: 1.5px solid var(--color-line); background: #f6f6f6; overflow: hidden; cursor: pointer; padding: 0; transition: border-color .2s, transform .2s; }
+.sl-thumbs button img { mix-blend-mode: multiply; object-fit: cover; }
+.sl-thumbs button[aria-current="true"] { border-color: var(--color-brand); transform: translateY(-4px); }
+.sl-track { height: 2px; background: var(--color-line); margin-top: 12px; position: relative; }
+.sl-track i { position: absolute; inset: 0; background: var(--color-brand); transform-origin: left; transform: scaleX(0); }
+
+.sl-mdet { display: none; }
+
+@media (max-width: 800px) {
+  .sl-copy { left: var(--pad); right: var(--pad); top: 76px; bottom: auto; text-align: center; max-width: none; }
+  .sl-copy p { display: none; }
+  .sl-copy .row { justify-content: center; }
+  .sl-copy .btn { padding: 10px 16px; font-size: 11px; }
+  .sl-meta { left: var(--pad); right: var(--pad); bottom: 2vh; text-align: center; }
+  .sl-thumbs { justify-content: center; }
+  .sl-thumbs button { width: 42px; height: 52px; }
+  .sl-meta .name { font-size: 30px; margin-bottom: 8px; }
+  .sl-prod { height: 38vh; bottom: calc(18vh + 76px); }
+  .sl-meta .spec { display: none; }
+  .sl-co { display: none; }
+  .sl-intro-top { top: calc(48% - var(--word) * .4 - 58px); font-size: 10px; letter-spacing: .22em; line-height: 1.7; }
+  .sl-intro-bot { flex-direction: column; gap: 8px; letter-spacing: .16em; }
+  .sl-intro-bot li + li::before { display: none; }
+  .sl-mdet {
+    display: block; opacity: 0; visibility: hidden; position: absolute; left: var(--pad); right: var(--pad); top: calc(76px + 150px); text-align: center;
+    font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; line-height: 1.6;
+  }
+  .sl-mdet b { color: var(--color-brand); }
+  .sl-mdet span:nth-child(n + 4) { display: none; } /* phones: the three key details only */
+}
+
+/* very light outline logo behind the product, fills the empty sides */
+.sl-ghost {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  font-family: var(--font-display); font-size: min(34vw, 62vh); line-height: .8; white-space: nowrap; letter-spacing: .02em;
+  color: transparent; -webkit-text-stroke: 1.5px rgba(11,11,11,.06); opacity: 0; pointer-events: none; user-select: none;
+}

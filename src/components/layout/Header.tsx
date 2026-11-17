@@ -1,0 +1,96 @@
+'use client';
+
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { useEffect, useState } from 'react';
+import { SITE } from '@/config/site';
+import { Link, usePathname } from '@/i18n/navigation';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { NAV_ITEMS } from './nav-items';
+
+export function Header() {
+  const t = useTranslations();
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // close the mobile menu after navigating
+  useEffect(() => setMenuOpen(false), [pathname]);
+
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
+
+  return (
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 ${
+        scrolled && pathname !== '/' ? 'bg-white/95 shadow-[0_1px_0_var(--color-line)] backdrop-blur' : ''
+      }`}
+    >
+      <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:rounded focus:bg-white focus:px-3 focus:py-2">
+        {t('Nav.skip')}
+      </a>
+      <div className="container-page flex h-[72px] items-center justify-between gap-4">
+        <Link href="/" className="inline-flex shrink-0 rounded-[10px] bg-ink px-3 py-1.5" aria-label={SITE.name}>
+          <Image src={SITE.logo} alt={SITE.name} width={110} height={30} className="h-[30px] w-auto" priority />
+        </Link>
+
+        <nav aria-label="Main" className="hidden lg:block">
+          <ul className="flex items-center gap-6 rounded-full border-[1.5px] border-ink/20 bg-white/85 px-6 py-3 text-xs font-bold tracking-[0.12em] uppercase backdrop-blur">
+            {NAV_ITEMS.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className={`transition-colors hover:text-brand ${isActive(item.href) ? 'text-brand' : 'text-ink/80'}`}
+                >
+                  {t(`Nav.${item.label}`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <LanguageSwitcher />
+          <Link href="/contact" className="btn hidden sm:inline-flex">
+            {t('Common.requestQuote')}
+          </Link>
+          <button
+            type="button"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-ink text-white lg:hidden"
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            aria-label={menuOpen ? t('Nav.close') : t('Nav.menu')}
+            onClick={() => setMenuOpen((v) => !v)}
+          >
+            <svg aria-hidden width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+              {menuOpen ? <path d="M6 6l12 12M18 6L6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <nav id="mobile-menu" aria-label="Mobile" className="container-page border-t border-line bg-white pb-6 lg:hidden">
+          <ul className="flex flex-col">
+            {NAV_ITEMS.map((item) => (
+              <li key={item.href} className="border-b border-line">
+                <Link href={item.href} className={`display block py-4 text-3xl ${isActive(item.href) ? 'text-brand' : ''}`}>
+                  {t(`Nav.${item.label}`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href="/contact" className="btn mt-5 w-full">
+            {t('Common.requestQuote')}
+          </Link>
+        </nav>
+      )}
+    </header>
+  );
+}

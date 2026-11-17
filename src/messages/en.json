@@ -1,0 +1,594 @@
+{
+  "Meta": {
+    "siteName": "Spotex International",
+    "homeTitle": "Spotex International · Martial Arts Uniform Manufacturer",
+    "homeDescription": "BJJ gis, judo, karate and taekwondo uniforms and belts, made in our own factory in Pakistan and custom-branded for academies and brands in the USA and Europe."
+  },
+  "Nav": {
+    "home": "Home",
+    "products": "Products",
+    "privateLabel": "Custom Uniforms",
+    "factory": "Factory",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "Common": {
+    "close": "Close",
+    "viewDetails": "Full details",
+    "viewAllProducts": "View all products",
+    "quickNote": "Made in our own factory. Your logo, colours and sizes on request, with a sample first.",
+    "requestQuote": "Request a quote",
+    "requestSample": "Request a sample",
+    "whatsapp": "WhatsApp us",
+    "viewCollection": "View collection",
+    "viewAll": "View all",
+    "viewProducts": "View products",
+    "products": "{count, plural, one {# product} other {# products}}",
+    "scroll": "Scroll",
+    "learnMore": "Learn more"
+  },
+  "Footer": {
+    "tagline": "Martial arts uniforms, woven, cut and stitched in our own factory in Gujranwala, Pakistan, since 1989.",
+    "explore": "Explore",
+    "categories": "Products",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "since": "Own factory since {year}",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "madeIn": "Made in Gujranwala, Pakistan"
+  },
+  "Hero": {
+    "introTop": "Martial arts uniform manufacturer & exporter",
+    "introFacts": [
+      "Own factory since 1989",
+      "Gujranwala · Pakistan",
+      "Exporting to USA & Europe"
+    ],
+    "eyebrow": "Spotex International",
+    "titleA": "Custom uniforms,",
+    "titleB": "made in-house.",
+    "copy": "Jiu-Jitsu, Judo, Karate and Taekwondo uniforms, made in our own factory and branded for academies in the USA and Europe.",
+    "callouts": {
+      "si-jju-1001": {
+        "label": {
+          "title": "Woven labels",
+          "text": "Your brand at the collar"
+        },
+        "weave": {
+          "title": "Pearl weave",
+          "text": "280 GSM poly-cotton jacket"
+        },
+        "logo": {
+          "title": "Your logo",
+          "text": "Embroidered on chest, sleeves & back"
+        },
+        "pants": {
+          "title": "Ripstop pants",
+          "text": "Light and tear-resistant"
+        },
+        "belt": {
+          "title": "Matching belts",
+          "text": "Every rank colour, made in-house"
+        }
+      },
+      "si-ju-1005": {
+        "dye": {
+          "title": "Your colours",
+          "text": "Blue, white or dyed to order"
+        },
+        "weight": {
+          "title": "550 GSM",
+          "text": "Challenger poly-cotton weave"
+        },
+        "belt": {
+          "title": "Rank belts",
+          "text": "Judo belts in every colour"
+        },
+        "range": {
+          "title": "Three weights",
+          "text": "450 · 550 · 700 GSM"
+        },
+        "pants": {
+          "title": "Drill pants",
+          "text": "100% cotton"
+        }
+      },
+      "si-jju-1002": {
+        "stitch": {
+          "title": "Contrast stitching",
+          "text": "Thread colour to match your brand"
+        },
+        "patch": {
+          "title": "Shoulder patch",
+          "text": "Your academy badge"
+        },
+        "logo": {
+          "title": "Chest embroidery",
+          "text": "Your logo stitched in"
+        },
+        "made": {
+          "title": "Made in-house",
+          "text": "Woven, cut & stitched in Gujranwala"
+        },
+        "belt": {
+          "title": "Matching belts",
+          "text": "Every rank colour, made in-house"
+        }
+      },
+      "si-ms-1001": {
+        "waist": {
+          "title": "Waistband logo",
+          "text": "Your mark on the belt line"
+        },
+        "print": {
+          "title": "Full sublimation",
+          "text": "Any design, any colour"
+        },
+        "fabric": {
+          "title": "Polyester",
+          "text": "Light fight-wear fabric"
+        },
+        "team": {
+          "title": "Team orders",
+          "text": "For academies & fight brands"
+        }
+      },
+      "si-gbp-1001": {
+        "handle": {
+          "title": "Grab handle",
+          "text": "Easy carry to the gym"
+        },
+        "kit": {
+          "title": "Full kit carry",
+          "text": "Room for gi, belt & gear"
+        },
+        "pocket": {
+          "title": "Side pockets",
+          "text": "Bottle and small items"
+        },
+        "brand": {
+          "title": "Your branding",
+          "text": "Academy logo on the front"
+        }
+      }
+    }
+  },
+  "Film": {
+    "chapters": {
+      "fabric": "Fabric",
+      "uniforms": "Uniforms",
+      "custom": "Custom",
+      "collection": "Collection",
+      "belts": "Belts",
+      "factory": "Factory",
+      "export": "Export"
+    },
+    "fabric": {
+      "eyebrow": "01 · Fabric",
+      "titleA": "Woven",
+      "titleB": "in-house.",
+      "text": "Our own fabric making, knitting and dyeing departments mean we control the weave from the very first thread.",
+      "academy": "Judo · Academy",
+      "challenger": "Judo · Challenger",
+      "winner": "Judo · Winner",
+      "details": {
+        "label": "Woven brand label",
+        "fabric": "Pearl weave fabric",
+        "embroidery": "Chest embroidery",
+        "belt": "Rank belt",
+        "drawstring": "Drawstring waist",
+        "pants": "Ripstop pants"
+      }
+    },
+    "uniforms": {
+      "eyebrow": "02 · Uniforms",
+      "titleA": "One factory.",
+      "titleB": "Every discipline.",
+      "allCategories": "View all categories",
+      "disciplines": [
+        "Jiu-Jitsu",
+        "Judo",
+        "Karate",
+        "Taekwondo",
+        "Sambo"
+      ],
+      "facts": [
+        "Pearl & gold weave · 280–400 GSM",
+        "450 · 550 · 700 GSM",
+        "10 oz canvas",
+        "Poly-cotton or 100% cotton",
+        "Jackets & shorts, red and blue"
+      ]
+    },
+    "custom": {
+      "eyebrow": "03 · Your brand",
+      "titleA": "Your artwork,",
+      "titleB": "stitched in.",
+      "text": "Send your academy or brand artwork. We place it where you want it, make a first sample and produce under your name.",
+      "steps": [
+        "Send your artwork",
+        "Design mock-up",
+        "Approve the sample",
+        "Production & shipping"
+      ],
+      "methodsTitle": "How it's applied",
+      "methods": [
+        "Embroidery",
+        "Woven patch",
+        "Screen print",
+        "Sublimation"
+      ],
+      "stepsTitle": "How it works",
+      "places": {
+        "collar": "Collar label",
+        "chest": "Chest",
+        "sleeve": "Sleeve",
+        "belt": "Belt",
+        "thigh": "Pants thigh",
+        "pants": "Pants leg"
+      }
+    },
+    "collection": {
+      "eyebrow": "04 · Collection",
+      "titleA": "The full",
+      "titleB": "kit.",
+      "also": "Tap any product for details · Also made:",
+      "alsoList": "Rash guards · Hoodies · Singlets · Leggings · Sports bras"
+    },
+    "belts": {
+      "eyebrow": "05 · Belts",
+      "title": "Every rank.",
+      "titleA": "Belts for",
+      "titleB": "every rank.",
+      "ranks": [
+        "White",
+        "Blue",
+        "Purple",
+        "Brown",
+        "Black"
+      ],
+      "rank": "Rank {n}"
+    },
+    "factory": {
+      "eyebrow": "06 · Factory",
+      "titleA": "One roof.",
+      "titleB": "Ten departments.",
+      "text": "Every step happens in-house in Gujranwala, Pakistan.",
+      "staff": "Qualified staff",
+      "clients": "Loyal clients",
+      "iso": "9001:2015 certified",
+      "since": "Making uniforms since"
+    },
+    "export": {
+      "eyebrow": "07 · Export",
+      "titleA": "From our factory",
+      "titleB": "to your mat.",
+      "origin": "Gujranwala, Pakistan",
+      "countries": {
+        "kr": "South Korea",
+        "it": "Italy",
+        "de": "Germany",
+        "no": "Norway",
+        "us": "United States"
+      },
+      "markets": {
+        "us": "United States",
+        "eu": "Europe · Norway · Germany · Italy",
+        "kr": "South Korea"
+      }
+    }
+  },
+  "HomeCta": {
+    "eyebrow": "Start with a sample",
+    "titleA": "Let's make",
+    "titleB": "your uniform.",
+    "text": "Tell us what you need: uniforms, belts, rash guards or shorts, with or without your artwork."
+  },
+  "Departments": {
+    "design": {
+      "name": "Design & Development",
+      "text": "Your artwork turned into production-ready designs and tech packs."
+    },
+    "pattern": {
+      "name": "Pattern Making",
+      "text": "Patterns graded for every size, from kids to A5."
+    },
+    "fabric": {
+      "name": "Fabric Making",
+      "text": "Pearl, gold and ripstop weaves made on our own looms."
+    },
+    "knitting": {
+      "name": "Knitting",
+      "text": "Knitted fabrics for rash guards, shorts and fight wear."
+    },
+    "dyeing": {
+      "name": "Fabric Dyeing",
+      "text": "Colours matched to your brand and dyed in-house."
+    },
+    "cutting": {
+      "name": "Cutting",
+      "text": "Precise cutting for consistent sizing across every order."
+    },
+    "printing": {
+      "name": "Printing",
+      "text": "Embroidery, screen print and full sublimation."
+    },
+    "stitching": {
+      "name": "Stitching",
+      "text": "Reinforced seams built for hard training."
+    },
+    "inspection": {
+      "name": "Inspection & Press",
+      "text": "Every piece checked, pressed and measured."
+    },
+    "packing": {
+      "name": "Packing",
+      "text": "Packed with your labels, ready for export."
+    }
+  },
+  "Catalog": {
+    "categories": {
+      "bjj-gis": {
+        "name": "BJJ Uniforms",
+        "intro": "Brazilian Jiu-Jitsu gis in pearl, gold and all-play weaves from 280 to 400 GSM, with ripstop pants. Made to order in your colours with your academy branding."
+      },
+      "judo-uniforms": {
+        "name": "Judo Uniforms",
+        "intro": "Judo gis in three weights: 450 GSM Academy, 550 GSM Challenger and 700 GSM Winner, with 100% cotton drill pants."
+      },
+      "karate-uniforms": {
+        "name": "Karate Uniforms",
+        "intro": "10 oz karate uniforms in poly-cotton or 100% cotton, in all regular colours, with elastic or drawstring waist."
+      },
+      "taekwondo-uniforms": {
+        "name": "Taekwondo Uniforms",
+        "intro": "Taekwondo doboks in poly-cotton or 100% cotton, in all regular colours, with elastic waist pants."
+      },
+      "sambo-uniforms": {
+        "name": "Sambo Uniforms",
+        "intro": "Sambo jackets and shorts made to order in red and blue."
+      },
+      "belts": {
+        "name": "BJJ Belts",
+        "intro": "BJJ and judo rank belts, 350 GSM gi-fabric belts and casual belts, in every rank colour and in sizes S to 3XL."
+      },
+      "mma-shorts": {
+        "name": "MMA Shorts",
+        "intro": "Fully sublimated MMA and grappling shorts in stretch polyester, printed with your designs and team colours."
+      },
+      "rash-guards": {
+        "name": "Rash Guards",
+        "intro": "Short and long sleeve rash guards in compression fabric, sublimated with your designs and rank colours."
+      },
+      "fight-wear": {
+        "name": "Fight Wear",
+        "intro": "Hoodies and wrestling singlets for teams and academies, made with your colours and branding."
+      },
+      "bags": {
+        "name": "Gi Bags",
+        "intro": "Gi backpacks with room for uniform, belt and gear, branded for your academy."
+      }
+    },
+    "types": {
+      "bjjGi": "Jiu-Jitsu Gi",
+      "judoUniform": "Judo Uniform",
+      "karateUniform": "Karate Uniform",
+      "taekwondoUniform": "Taekwondo Uniform",
+      "samboUniform": "Sambo Uniform",
+      "bjjBelt": "BJJ Belt",
+      "giFabricBelt": "350 GSM Gi-Fabric Belt",
+      "casualBelt": "Casual Belt",
+      "judoBelt": "Judo Belt",
+      "mmaShorts": "MMA Shorts",
+      "hoodie": "Hoodie",
+      "singlet": "Wrestling Singlet",
+      "giBag": "Gi Bag Pack"
+    },
+    "labels": {
+      "weave": "Weave",
+      "jacket": "Fabric",
+      "weight": "Weight",
+      "pants": "Pants",
+      "colours": "Colours",
+      "waist": "Waist",
+      "width": "Width",
+      "sizes": "Sizes",
+      "print": "Print",
+      "use": "Use"
+    },
+    "values": {
+      "pearl": "Pearl weave",
+      "gold": "Gold weave",
+      "allPlay": "All-play weave",
+      "polyCotton": "Poly-cotton",
+      "cotton": "100% cotton",
+      "bambooCotton": "Bamboo cotton",
+      "polyCottonOrCotton": "Poly-cotton or 100% cotton",
+      "polyester": "Polyester",
+      "giFabric": "Gi fabric",
+      "ripstop": "Ripstop",
+      "ripstopCotton": "Ripstop, 100% cotton",
+      "ripstop10oz": "10 oz ripstop, 100% cotton",
+      "drillCotton": "Drill, 100% cotton",
+      "allRegular": "All regular colours",
+      "allRanks": "All rank colours",
+      "redBlue": "Red and blue",
+      "elastic": "Elastic",
+      "elasticOrDrawstring": "Elastic or drawstring",
+      "sToXxxl": "S to 3XL",
+      "sublimated": "Full sublimation",
+      "sambo": "Sambo training and competition",
+      "bjjRank": "BJJ ranking",
+      "judoRank": "Judo ranking",
+      "giAndGear": "Gi, belt and training gear"
+    },
+    "units": {
+      "gsm": "{n} GSM",
+      "oz": "{n} oz",
+      "cm": "{n} cm"
+    }
+  },
+  "ProductsPage": {
+    "title": "Products",
+    "eyebrow": "Catalogue",
+    "intro": "Every product is made to order in our own factory, in your colours and with your branding. Pick a category to see the range.",
+    "metaDescription": "BJJ gis, judo, karate and taekwondo uniforms, belts, fight wear and bags, made to order with your branding.",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Search by name or code…",
+    "filterLabel": "Filter by category",
+    "noResults": "No products match your search.",
+    "clear": "Clear filters",
+    "searchAll": "Search the catalogue: product, code or sport…",
+    "viewRange": "View range",
+    "categoryLabel": "Category",
+    "sortLabel": "Sort",
+    "sortDefault": "Featured",
+    "sortCode": "Code A–Z",
+    "filters": "Filters",
+    "clearAll": "Clear all",
+    "pagination": "Pages",
+    "prev": "Previous",
+    "next": "Next",
+    "allCategories": "All categories",
+    "sortMost": "Most products",
+    "sortName": "Name A–Z"
+  },
+  "CategoryPage": {
+    "metaDescription": "{name} made to order by Spotex International in Pakistan, with your colours and branding."
+  },
+  "ProductPage": {
+    "specs": "Specifications",
+    "custom": "Customise it",
+    "customList": [
+      "Your colours",
+      "Embroidered or printed logo",
+      "Woven labels and patches",
+      "Custom packaging"
+    ],
+    "moq": "Made to order. Start with one sample, then scale to your academy or brand.",
+    "related": "More from this range",
+    "code": "Code",
+    "whatsappText": "Hello Spotex, I'm interested in {code} ({name}).",
+    "metaDescription": "{name} {code}: {specs}. Made to order by Spotex International with your branding."
+  },
+  "PrivateLabel": {
+    "metaTitle": "Private Label Martial Arts Uniforms",
+    "metaDescription": "Launch your own BJJ gi or martial arts brand. Your design, your labels, made in our own factory.",
+    "eyebrow": "Private label",
+    "titleA": "Your brand.",
+    "titleB": "Our factory.",
+    "intro": "We make uniforms and gear for academies, clubs and brands under their own name. You bring the idea, we handle fabric, production and packing.",
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "Share your idea",
+        "text": "Send your artwork, colours and the products you need."
+      },
+      {
+        "title": "Design & sample",
+        "text": "We prepare the design and make a first sample, with or without your artwork."
+      },
+      {
+        "title": "Approve",
+        "text": "You check the sample and we adjust until it is right."
+      },
+      {
+        "title": "Production",
+        "text": "Your order is made in our own factory, from fabric to finishing."
+      },
+      {
+        "title": "Packing & shipping",
+        "text": "Packed with your labels and shipped to your door."
+      }
+    ],
+    "optionsTitle": "What you can customise",
+    "options": [
+      {
+        "title": "Fabric & weight",
+        "text": "Pearl, gold, ripstop or all-play weaves from 280 to 700 GSM."
+      },
+      {
+        "title": "Colours",
+        "text": "Fabric dyed to match your brand colours."
+      },
+      {
+        "title": "Logos",
+        "text": "Embroidery, screen print, sublimation and patches."
+      },
+      {
+        "title": "Labels & packing",
+        "text": "Woven labels, hang tags and branded packaging."
+      }
+    ]
+  },
+  "FactoryPage": {
+    "metaTitle": "Our Factory in Gujranwala",
+    "metaDescription": "Ten in-house departments, from fabric making and dyeing to stitching and packing. See how Spotex makes martial arts uniforms.",
+    "eyebrow": "Our factory",
+    "titleA": "One roof.",
+    "titleB": "Ten departments.",
+    "intro": "Most uniform suppliers buy fabric and outsource stitching. We do every step ourselves in Gujranwala, Pakistan, so we control quality, colour and delivery time.",
+    "qualityTitle": "Quality and testing",
+    "quality": "Our R&D and apparel testing lab checks materials and finished products before they ship. Spotex is ISO 9001:2015 certified.",
+    "csrTitle": "Responsibility",
+    "csr": [
+      "A free IT training centre for local people and employees, with more than 1,000 graduates.",
+      "Life insurance for every employee.",
+      "Free firefighting training and sports activities for the local community."
+    ]
+  },
+  "AboutPage": {
+    "metaTitle": "About Spotex International",
+    "metaDescription": "A martial arts uniform manufacturer in Gujranwala, Pakistan, making gis and belts since 1989.",
+    "eyebrow": "About us",
+    "titleA": "Made in Gujranwala",
+    "titleB": "since 1989.",
+    "intro": "Spotex International started as a small workshop in Gujranwala, Pakistan. Today we make martial arts uniforms, belts and fight wear for academies, clubs and brands abroad, with every step of production under our own roof.",
+    "factsTitle": "At a glance",
+    "facts": {
+      "since": "Founded",
+      "staff": "Qualified staff",
+      "clients": "Clients",
+      "departments": "In-house departments"
+    },
+    "valuesTitle": "What we stand for",
+    "values": [
+      {
+        "title": "Made in-house",
+        "text": "Fabric, colour, cutting and stitching under one roof."
+      },
+      {
+        "title": "Sample first",
+        "text": "Every new customer can start with a single sample."
+      },
+      {
+        "title": "Your brand",
+        "text": "We produce under your name, with your labels."
+      }
+    ]
+  },
+  "ContactPage": {
+    "metaTitle": "Contact Spotex International",
+    "metaDescription": "Request a quote or a sample for martial arts uniforms. Contact Spotex International by WhatsApp or email.",
+    "eyebrow": "Contact",
+    "titleA": "Let's talk about",
+    "titleB": "your order.",
+    "intro": "Tell us what you need and how many, and our sales team will get back to you.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "formSoon": "The online quote form opens soon. Until then, send us a WhatsApp message or an email."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "text": "This page doesn't exist or has moved.",
+    "back": "Back to home"
+  }
+}

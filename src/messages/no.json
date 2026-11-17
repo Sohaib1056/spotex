@@ -1,0 +1,594 @@
+{
+  "Meta": {
+    "siteName": "Spotex International",
+    "homeTitle": "Spotex International · Produsent av kampsportdrakter",
+    "homeDescription": "BJJ-gier, judo-, karate- og taekwondodrakter og belter, laget i vår egen fabrikk i Pakistan og merket for klubber og merkevarer i Europa og USA."
+  },
+  "Nav": {
+    "home": "Hjem",
+    "products": "Produkter",
+    "privateLabel": "Egen design",
+    "factory": "Fabrikk",
+    "about": "Om oss",
+    "contact": "Kontakt",
+    "menu": "Meny",
+    "close": "Lukk",
+    "language": "Språk",
+    "skip": "Gå til innhold"
+  },
+  "Common": {
+    "close": "Lukk",
+    "viewDetails": "Alle detaljer",
+    "viewAllProducts": "Se alle produkter",
+    "quickNote": "Laget i vår egen fabrikk. Din logo, farger og størrelser på forespørsel, med prøve først.",
+    "requestQuote": "Be om tilbud",
+    "requestSample": "Be om prøve",
+    "whatsapp": "Send oss en WhatsApp",
+    "viewCollection": "Se kolleksjonen",
+    "viewAll": "Se alle",
+    "viewProducts": "Se produkter",
+    "products": "{count, plural, one {# produkt} other {# produkter}}",
+    "scroll": "Rull",
+    "learnMore": "Les mer"
+  },
+  "Footer": {
+    "tagline": "Kampsportdrakter vevd, tilskåret og sydd i vår egen fabrikk i Gujranwala, Pakistan, siden 1989.",
+    "explore": "Utforsk",
+    "categories": "Produkter",
+    "contact": "Kontakt",
+    "rights": "Alle rettigheter forbeholdt.",
+    "since": "Egen fabrikk siden {year}",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-post",
+    "madeIn": "Laget i Gujranwala, Pakistan"
+  },
+  "Hero": {
+    "introTop": "Produsent og eksportør av kampsportdrakter",
+    "introFacts": [
+      "Egen fabrikk siden 1989",
+      "Gujranwala · Pakistan",
+      "Eksport til USA og Europa"
+    ],
+    "eyebrow": "Spotex International",
+    "titleA": "Tilpassede drakter,",
+    "titleB": "laget av oss.",
+    "copy": "Jiu-jitsu-, judo-, karate- og taekwondodrakter fra vår egen fabrikk, med klubbens eller merkevarens logo.",
+    "callouts": {
+      "si-jju-1001": {
+        "label": {
+          "title": "Vevde etiketter",
+          "text": "Ditt merke i kragen"
+        },
+        "weave": {
+          "title": "Pearl-vev",
+          "text": "Jakke i 280 GSM polyester-bomull"
+        },
+        "logo": {
+          "title": "Din logo",
+          "text": "Brodert på bryst, armer og rygg"
+        },
+        "pants": {
+          "title": "Ripstopbukse",
+          "text": "Lett og rivesterk"
+        },
+        "belt": {
+          "title": "Matchende belter",
+          "text": "Alle gradsfarger, laget av oss"
+        }
+      },
+      "si-ju-1005": {
+        "dye": {
+          "title": "Dine farger",
+          "text": "Blå, hvit eller farget etter ønske"
+        },
+        "weight": {
+          "title": "550 GSM",
+          "text": "Challenger-vev i polyester-bomull"
+        },
+        "belt": {
+          "title": "Gradsbelter",
+          "text": "Judobelter i alle farger"
+        },
+        "range": {
+          "title": "Tre vekter",
+          "text": "450 · 550 · 700 GSM"
+        },
+        "pants": {
+          "title": "Drillbukse",
+          "text": "100 % bomull"
+        }
+      },
+      "si-jju-1002": {
+        "stitch": {
+          "title": "Kontrastsøm",
+          "text": "Trådfarge som matcher merket ditt"
+        },
+        "patch": {
+          "title": "Skuldermerke",
+          "text": "Klubbens emblem"
+        },
+        "logo": {
+          "title": "Brodering på brystet",
+          "text": "Logoen din sydd inn"
+        },
+        "made": {
+          "title": "Egen produksjon",
+          "text": "Vevd, tilskåret og sydd i Gujranwala"
+        },
+        "belt": {
+          "title": "Matchende belter",
+          "text": "Alle gradsfarger, laget av oss"
+        }
+      },
+      "si-ms-1001": {
+        "waist": {
+          "title": "Logo i linningen",
+          "text": "Ditt merke i livet"
+        },
+        "print": {
+          "title": "Full sublimering",
+          "text": "Alle design, alle farger"
+        },
+        "fabric": {
+          "title": "Polyester",
+          "text": "Lett fightwear-stoff"
+        },
+        "team": {
+          "title": "Lagbestillinger",
+          "text": "For klubber og fightwear-merker"
+        }
+      },
+      "si-gbp-1001": {
+        "handle": {
+          "title": "Bærehåndtak",
+          "text": "Lett å ta med på trening"
+        },
+        "kit": {
+          "title": "Plass til alt",
+          "text": "Gi, belte og utstyr"
+        },
+        "pocket": {
+          "title": "Sidelommer",
+          "text": "Flaske og småting"
+        },
+        "brand": {
+          "title": "Din merking",
+          "text": "Klubblogo foran"
+        }
+      }
+    }
+  },
+  "Film": {
+    "chapters": {
+      "fabric": "Stoff",
+      "uniforms": "Drakter",
+      "custom": "Merking",
+      "collection": "Kolleksjon",
+      "belts": "Belter",
+      "factory": "Fabrikk",
+      "export": "Eksport"
+    },
+    "fabric": {
+      "eyebrow": "01 · Stoff",
+      "titleA": "Vevd",
+      "titleB": "av oss.",
+      "text": "Egne avdelinger for veving, strikking og farging betyr at vi kontrollerer stoffet fra første tråd.",
+      "academy": "Judo · Academy",
+      "challenger": "Judo · Challenger",
+      "winner": "Judo · Winner",
+      "details": {
+        "label": "Vevd merkeetikett",
+        "fabric": "Stoff i pearl-vev",
+        "embroidery": "Brodering på brystet",
+        "belt": "Gradsbelte",
+        "drawstring": "Snorlinning",
+        "pants": "Ripstopbukse"
+      }
+    },
+    "uniforms": {
+      "eyebrow": "02 · Drakter",
+      "titleA": "Én fabrikk.",
+      "titleB": "Alle grener.",
+      "allCategories": "Se alle kategorier",
+      "disciplines": [
+        "Jiu-jitsu",
+        "Judo",
+        "Karate",
+        "Taekwondo",
+        "Sambo"
+      ],
+      "facts": [
+        "Pearl- og gold-vev · 280–400 GSM",
+        "450 · 550 · 700 GSM",
+        "10 oz canvas",
+        "Polyester-bomull eller 100 % bomull",
+        "Jakker og shorts i rødt og blått"
+      ]
+    },
+    "custom": {
+      "eyebrow": "03 · Din merkevare",
+      "titleA": "Ditt design,",
+      "titleB": "sydd inn.",
+      "text": "Send oss klubbens eller merkevarens design. Vi plasserer det der du vil, lager en første prøve og produserer under ditt navn.",
+      "steps": [
+        "Send designet ditt",
+        "Designutkast",
+        "Godkjenn prøven",
+        "Produksjon og frakt"
+      ],
+      "methodsTitle": "Slik påføres det",
+      "methods": [
+        "Brodering",
+        "Vevd merke",
+        "Silketrykk",
+        "Sublimering"
+      ],
+      "stepsTitle": "Slik fungerer det",
+      "places": {
+        "collar": "Kragemerke",
+        "chest": "Bryst",
+        "sleeve": "Erme",
+        "belt": "Belte",
+        "thigh": "Bukse · lår",
+        "pants": "Buksebein"
+      }
+    },
+    "collection": {
+      "eyebrow": "04 · Kolleksjon",
+      "titleA": "Hele",
+      "titleB": "utstyret.",
+      "also": "Trykk på et produkt for detaljer · Vi lager også:",
+      "alsoList": "Rashguards · Hettegensere · Brytedrakter · Tights · Sports-BH-er"
+    },
+    "belts": {
+      "eyebrow": "05 · Belter",
+      "title": "Hver grad.",
+      "titleA": "Belter for",
+      "titleB": "hver grad.",
+      "ranks": [
+        "Hvit",
+        "Blå",
+        "Lilla",
+        "Brun",
+        "Svart"
+      ],
+      "rank": "Grad {n}"
+    },
+    "factory": {
+      "eyebrow": "06 · Fabrikk",
+      "titleA": "Ett tak.",
+      "titleB": "Ti avdelinger.",
+      "text": "Hvert steg skjer i egen fabrikk i Gujranwala, Pakistan.",
+      "staff": "Fagarbeidere",
+      "clients": "Faste kunder",
+      "iso": "Sertifisert etter 9001:2015",
+      "since": "Lager drakter siden"
+    },
+    "export": {
+      "eyebrow": "07 · Eksport",
+      "titleA": "Fra vår fabrikk",
+      "titleB": "til din matte.",
+      "origin": "Gujranwala, Pakistan",
+      "countries": {
+        "kr": "Sør-Korea",
+        "it": "Italia",
+        "de": "Tyskland",
+        "no": "Norge",
+        "us": "USA"
+      },
+      "markets": {
+        "us": "USA",
+        "eu": "Europa · Norge · Tyskland · Italia",
+        "kr": "Sør-Korea"
+      }
+    }
+  },
+  "HomeCta": {
+    "eyebrow": "Start med en prøve",
+    "titleA": "La oss lage",
+    "titleB": "din drakt.",
+    "text": "Fortell oss hva du trenger: drakter, belter, rashguards eller shorts, med eller uten ditt design."
+  },
+  "Departments": {
+    "design": {
+      "name": "Design og utvikling",
+      "text": "Ditt design gjort klart for produksjon, med tech packs."
+    },
+    "pattern": {
+      "name": "Mønster",
+      "text": "Mønstre gradert for alle størrelser, fra barn til A5."
+    },
+    "fabric": {
+      "name": "Veving",
+      "text": "Pearl-, gold- og ripstopvev fra egne vevstoler."
+    },
+    "knitting": {
+      "name": "Strikking",
+      "text": "Strikkede stoffer til rashguards, shorts og fightwear."
+    },
+    "dyeing": {
+      "name": "Farging",
+      "text": "Farger tilpasset merkevaren din, farget i egen fabrikk."
+    },
+    "cutting": {
+      "name": "Tilskjæring",
+      "text": "Presis tilskjæring for jevne størrelser i hver ordre."
+    },
+    "printing": {
+      "name": "Trykk",
+      "text": "Brodering, silketrykk og full sublimering."
+    },
+    "stitching": {
+      "name": "Søm",
+      "text": "Forsterkede sømmer laget for hard trening."
+    },
+    "inspection": {
+      "name": "Kontroll og pressing",
+      "text": "Hvert plagg kontrolleres, presses og måles."
+    },
+    "packing": {
+      "name": "Pakking",
+      "text": "Pakket med dine etiketter, klar for eksport."
+    }
+  },
+  "Catalog": {
+    "categories": {
+      "bjj-gis": {
+        "name": "BJJ-uniformer",
+        "intro": "Brasiliansk jiu-jitsu-gier i pearl-, gold- og all-play-vev fra 280 til 400 GSM, med ripstopbukser. Laget på bestilling i dine farger og med klubbens logo."
+      },
+      "judo-uniforms": {
+        "name": "Judodrakter",
+        "intro": "Judodrakter i tre vekter: 450 GSM Academy, 550 GSM Challenger og 700 GSM Winner, med drillbukser i 100 % bomull."
+      },
+      "karate-uniforms": {
+        "name": "Karatedrakter",
+        "intro": "Karatedrakter i 10 oz polyester-bomull eller 100 % bomull, i alle vanlige farger, med strikk- eller snorlinning."
+      },
+      "taekwondo-uniforms": {
+        "name": "Taekwondodrakter",
+        "intro": "Taekwondo-doboker i polyester-bomull eller 100 % bomull, i alle vanlige farger, med strikklinning."
+      },
+      "sambo-uniforms": {
+        "name": "Sambodrakter",
+        "intro": "Sambojakker og shorts laget på bestilling i rødt og blått."
+      },
+      "belts": {
+        "name": "BJJ-belter",
+        "intro": "BJJ- og judobelter, 350 GSM belter i gi-stoff og fritidsbelter, i alle gradsfarger og størrelser S til 3XL."
+      },
+      "mma-shorts": {
+        "name": "MMA-shorts",
+        "intro": "Helsublimerte MMA- og grappling-shorts i stretch-polyester, trykket med ditt design og lagets farger."
+      },
+      "rash-guards": {
+        "name": "Rash guards",
+        "intro": "Rash guards med korte og lange ermer i kompresjonsstoff, sublimert med ditt design og beltefarger."
+      },
+      "fight-wear": {
+        "name": "Fight wear",
+        "intro": "Hettegensere og brytedrakter for lag og akademier, med dine farger og din merkevare."
+      },
+      "bags": {
+        "name": "Gi-bager",
+        "intro": "Gi-ryggsekker med plass til drakt, belte og utstyr, med klubbens logo."
+      }
+    },
+    "types": {
+      "bjjGi": "Jiu-jitsu-gi",
+      "judoUniform": "Judodrakt",
+      "karateUniform": "Karatedrakt",
+      "taekwondoUniform": "Taekwondodrakt",
+      "samboUniform": "Sambodrakt",
+      "bjjBelt": "BJJ-belte",
+      "giFabricBelt": "Belte i 350 GSM gi-stoff",
+      "casualBelt": "Fritidsbelte",
+      "judoBelt": "Judobelte",
+      "mmaShorts": "MMA-shorts",
+      "hoodie": "Hettegenser",
+      "singlet": "Brytedrakt",
+      "giBag": "Gi-ryggsekk"
+    },
+    "labels": {
+      "weave": "Vev",
+      "jacket": "Stoff",
+      "weight": "Vekt",
+      "pants": "Bukse",
+      "colours": "Farger",
+      "waist": "Linning",
+      "width": "Bredde",
+      "sizes": "Størrelser",
+      "print": "Trykk",
+      "use": "Bruk"
+    },
+    "values": {
+      "pearl": "Pearl-vev",
+      "gold": "Gold-vev",
+      "allPlay": "All-play-vev",
+      "polyCotton": "Polyester-bomull",
+      "cotton": "100 % bomull",
+      "bambooCotton": "Bambusbomull",
+      "polyCottonOrCotton": "Polyester-bomull eller 100 % bomull",
+      "polyester": "Polyester",
+      "giFabric": "Gi-stoff",
+      "ripstop": "Ripstop",
+      "ripstopCotton": "Ripstop, 100 % bomull",
+      "ripstop10oz": "10 oz ripstop, 100 % bomull",
+      "drillCotton": "Drill, 100 % bomull",
+      "allRegular": "Alle vanlige farger",
+      "allRanks": "Alle gradsfarger",
+      "redBlue": "Rødt og blått",
+      "elastic": "Strikk",
+      "elasticOrDrawstring": "Strikk eller snor",
+      "sToXxxl": "S til 3XL",
+      "sublimated": "Full sublimering",
+      "sambo": "Sambotrening og konkurranse",
+      "bjjRank": "BJJ-gradering",
+      "judoRank": "Judogradering",
+      "giAndGear": "Gi, belte og treningsutstyr"
+    },
+    "units": {
+      "gsm": "{n} GSM",
+      "oz": "{n} oz",
+      "cm": "{n} cm"
+    }
+  },
+  "ProductsPage": {
+    "title": "Produkter",
+    "eyebrow": "Katalog",
+    "intro": "Alle produkter lages på bestilling i vår egen fabrikk, i dine farger og med din merking. Velg en kategori.",
+    "metaDescription": "BJJ-gier, judo-, karate- og taekwondodrakter, belter, fightwear og bagger, laget på bestilling med din merking.",
+    "searchLabel": "Søk i produkter",
+    "searchPlaceholder": "Søk på navn eller kode…",
+    "filterLabel": "Filtrer etter kategori",
+    "noResults": "Ingen produkter passer søket.",
+    "clear": "Nullstill filtre",
+    "searchAll": "Søk i katalogen: produkt, kode eller sport…",
+    "viewRange": "Se utvalget",
+    "categoryLabel": "Kategori",
+    "sortLabel": "Sorter",
+    "sortDefault": "Anbefalt",
+    "sortCode": "Kode A–Å",
+    "filters": "Filtre",
+    "clearAll": "Nullstill alle",
+    "pagination": "Sider",
+    "prev": "Forrige",
+    "next": "Neste",
+    "allCategories": "Alle kategorier",
+    "sortMost": "Flest produkter",
+    "sortName": "Navn A–Å"
+  },
+  "CategoryPage": {
+    "metaDescription": "{name} laget på bestilling av Spotex International i Pakistan, i dine farger og med din merking."
+  },
+  "ProductPage": {
+    "specs": "Spesifikasjoner",
+    "custom": "Tilpass",
+    "customList": [
+      "Dine farger",
+      "Brodert eller trykket logo",
+      "Vevde etiketter og merker",
+      "Egen emballasje"
+    ],
+    "moq": "Laget på bestilling. Start med én prøve, og bestill deretter til klubben eller merkevaren din.",
+    "related": "Mer fra denne serien",
+    "code": "Varenr.",
+    "whatsappText": "Hei Spotex, jeg er interessert i {code} ({name}).",
+    "metaDescription": "{name} {code}: {specs}. Laget på bestilling av Spotex International med din merking."
+  },
+  "PrivateLabel": {
+    "metaTitle": "Kampsportdrakter under egen merkevare",
+    "metaDescription": "Start din egen BJJ-gi- eller kampsportmerkevare. Ditt design, dine etiketter, laget i vår egen fabrikk.",
+    "eyebrow": "Egen merkevare",
+    "titleA": "Din merkevare.",
+    "titleB": "Vår fabrikk.",
+    "intro": "Vi lager drakter og utstyr for klubber, skoler og merkevarer under deres eget navn. Du kommer med ideen, vi tar oss av stoff, produksjon og pakking.",
+    "stepsTitle": "Slik fungerer det",
+    "steps": [
+      {
+        "title": "Del ideen",
+        "text": "Send oss design, farger og produktene du trenger."
+      },
+      {
+        "title": "Design og prøve",
+        "text": "Vi lager designet og en første prøve, med eller uten ditt design."
+      },
+      {
+        "title": "Godkjenning",
+        "text": "Du sjekker prøven, og vi justerer til alt stemmer."
+      },
+      {
+        "title": "Produksjon",
+        "text": "Ordren lages i vår egen fabrikk, fra stoff til finish."
+      },
+      {
+        "title": "Pakking og frakt",
+        "text": "Pakket med dine etiketter og sendt til deg."
+      }
+    ],
+    "optionsTitle": "Dette kan du tilpasse",
+    "options": [
+      {
+        "title": "Stoff og vekt",
+        "text": "Pearl-, gold-, ripstop- eller all-play-vev fra 280 til 700 GSM."
+      },
+      {
+        "title": "Farger",
+        "text": "Stoff farget etter merkevarens farger."
+      },
+      {
+        "title": "Logoer",
+        "text": "Brodering, silketrykk, sublimering og merker."
+      },
+      {
+        "title": "Etiketter og emballasje",
+        "text": "Vevde etiketter, henge-lapper og merket emballasje."
+      }
+    ]
+  },
+  "FactoryPage": {
+    "metaTitle": "Vår fabrikk i Gujranwala",
+    "metaDescription": "Ti egne avdelinger, fra veving og farging til søm og pakking. Se hvordan Spotex lager kampsportdrakter.",
+    "eyebrow": "Vår fabrikk",
+    "titleA": "Ett tak.",
+    "titleB": "Ti avdelinger.",
+    "intro": "Mange leverandører kjøper inn stoff og setter bort syingen. Vi gjør hvert steg selv i Gujranwala, Pakistan, og kontrollerer dermed kvalitet, farge og leveringstid.",
+    "qualityTitle": "Kvalitet og testing",
+    "quality": "Vårt FoU- og tekstiltestlaboratorium kontrollerer materialer og ferdige produkter før forsendelse. Spotex er sertifisert etter ISO 9001:2015.",
+    "csrTitle": "Samfunnsansvar",
+    "csr": [
+      "Et gratis IT-opplæringssenter for lokalbefolkning og ansatte, med over 1 000 uteksaminerte.",
+      "Livsforsikring for alle ansatte.",
+      "Gratis brannvernopplæring og idrettsaktiviteter for lokalsamfunnet."
+    ]
+  },
+  "AboutPage": {
+    "metaTitle": "Om Spotex International",
+    "metaDescription": "Produsent av kampsportdrakter i Gujranwala, Pakistan. Gier og belter siden 1989.",
+    "eyebrow": "Om oss",
+    "titleA": "Laget i Gujranwala",
+    "titleB": "siden 1989.",
+    "intro": "Spotex International startet som et lite verksted i Gujranwala, Pakistan. I dag lager vi kampsportdrakter, belter og fightwear for klubber, skoler og merkevarer i utlandet, med hvert produksjonssteg under eget tak.",
+    "factsTitle": "Kort fortalt",
+    "facts": {
+      "since": "Grunnlagt",
+      "staff": "Fagarbeidere",
+      "clients": "Kunder",
+      "departments": "Egne avdelinger"
+    },
+    "valuesTitle": "Dette står vi for",
+    "values": [
+      {
+        "title": "Egen produksjon",
+        "text": "Stoff, farge, tilskjæring og søm under ett tak."
+      },
+      {
+        "title": "Prøve først",
+        "text": "Alle nye kunder kan starte med én prøve."
+      },
+      {
+        "title": "Din merkevare",
+        "text": "Vi produserer under ditt navn, med dine etiketter."
+      }
+    ]
+  },
+  "ContactPage": {
+    "metaTitle": "Kontakt Spotex International",
+    "metaDescription": "Be om tilbud eller prøve på kampsportdrakter. Kontakt oss på WhatsApp eller e-post.",
+    "eyebrow": "Kontakt",
+    "titleA": "La oss snakke om",
+    "titleB": "din bestilling.",
+    "intro": "Fortell oss hva du trenger og hvor mange, så tar salgsteamet vårt kontakt.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-post",
+    "whatsapp": "WhatsApp",
+    "formSoon": "Tilbudsskjemaet på nett kommer snart. Inntil da kan du sende oss en melding på WhatsApp eller e-post."
+  },
+  "NotFound": {
+    "title": "Fant ikke siden",
+    "text": "Denne siden finnes ikke eller er flyttet.",
+    "back": "Til forsiden"
+  }
+}

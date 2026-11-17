@@ -1,0 +1,594 @@
+{
+  "Meta": {
+    "siteName": "Spotex International",
+    "homeTitle": "Spotex International · Hersteller von Kampfsportbekleidung",
+    "homeDescription": "BJJ-Gis, Judo-, Karate- und Taekwondo-Anzüge sowie Gürtel aus unserer eigenen Fabrik in Pakistan, mit Ihrem Branding für Vereine, Schulen und Marken in Europa."
+  },
+  "Nav": {
+    "home": "Start",
+    "products": "Produkte",
+    "privateLabel": "Maßanfertigung",
+    "factory": "Fabrik",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "menu": "Menü",
+    "close": "Schließen",
+    "language": "Sprache",
+    "skip": "Zum Inhalt springen"
+  },
+  "Common": {
+    "close": "Schließen",
+    "viewDetails": "Alle Details",
+    "viewAllProducts": "Alle Produkte ansehen",
+    "quickNote": "In unserer eigenen Fabrik gefertigt. Ihr Logo, Ihre Farben und Größen auf Anfrage, zuerst mit Muster.",
+    "requestQuote": "Angebot anfordern",
+    "requestSample": "Muster anfordern",
+    "whatsapp": "WhatsApp schreiben",
+    "viewCollection": "Kollektion ansehen",
+    "viewAll": "Alle ansehen",
+    "viewProducts": "Produkte ansehen",
+    "products": "{count, plural, one {# Produkt} other {# Produkte}}",
+    "scroll": "Scrollen",
+    "learnMore": "Mehr erfahren"
+  },
+  "Footer": {
+    "tagline": "Kampfsportbekleidung, gewebt, zugeschnitten und genäht in unserer eigenen Fabrik in Gujranwala, Pakistan, seit 1989.",
+    "explore": "Entdecken",
+    "categories": "Produkte",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "since": "Eigene Fabrik seit {year}",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "madeIn": "Hergestellt in Gujranwala, Pakistan"
+  },
+  "Hero": {
+    "introTop": "Hersteller & Exporteur von Kampfsportanzügen",
+    "introFacts": [
+      "Eigene Fabrik seit 1989",
+      "Gujranwala · Pakistan",
+      "Export in die USA & nach Europa"
+    ],
+    "eyebrow": "Spotex International",
+    "titleA": "Individuelle Anzüge,",
+    "titleB": "selbst gefertigt.",
+    "copy": "Jiu-Jitsu-, Judo-, Karate- und Taekwondo-Anzüge aus eigener Fertigung, mit dem Branding Ihres Vereins oder Ihrer Marke.",
+    "callouts": {
+      "si-jju-1001": {
+        "label": {
+          "title": "Gewebte Etiketten",
+          "text": "Ihre Marke am Kragen"
+        },
+        "weave": {
+          "title": "Pearl-Weave",
+          "text": "Jacke aus 280 g/m² Mischgewebe"
+        },
+        "logo": {
+          "title": "Ihr Logo",
+          "text": "Gestickt auf Brust, Ärmeln & Rücken"
+        },
+        "pants": {
+          "title": "Ripstop-Hose",
+          "text": "Leicht und reißfest"
+        },
+        "belt": {
+          "title": "Passende Gürtel",
+          "text": "Jede Rangfarbe, selbst gefertigt"
+        }
+      },
+      "si-ju-1005": {
+        "dye": {
+          "title": "Ihre Farben",
+          "text": "Blau, Weiß oder nach Wunsch gefärbt"
+        },
+        "weight": {
+          "title": "550 g/m²",
+          "text": "Challenger-Mischgewebe"
+        },
+        "belt": {
+          "title": "Rangabzeichen",
+          "text": "Judogürtel in jeder Farbe"
+        },
+        "range": {
+          "title": "Drei Gewichte",
+          "text": "450 · 550 · 700 g/m²"
+        },
+        "pants": {
+          "title": "Drillich-Hose",
+          "text": "100 % Baumwolle"
+        }
+      },
+      "si-jju-1002": {
+        "stitch": {
+          "title": "Kontrastnähte",
+          "text": "Garnfarbe passend zu Ihrer Marke"
+        },
+        "patch": {
+          "title": "Schulter-Patch",
+          "text": "Ihr Vereinsabzeichen"
+        },
+        "logo": {
+          "title": "Bruststickerei",
+          "text": "Ihr Logo eingestickt"
+        },
+        "made": {
+          "title": "Eigene Fertigung",
+          "text": "Gewebt, geschnitten & genäht in Gujranwala"
+        },
+        "belt": {
+          "title": "Passende Gürtel",
+          "text": "Jede Rangfarbe, selbst gefertigt"
+        }
+      },
+      "si-ms-1001": {
+        "waist": {
+          "title": "Bund-Logo",
+          "text": "Ihr Zeichen am Bund"
+        },
+        "print": {
+          "title": "Vollsublimation",
+          "text": "Jedes Design, jede Farbe"
+        },
+        "fabric": {
+          "title": "Polyester",
+          "text": "Leichter Fightwear-Stoff"
+        },
+        "team": {
+          "title": "Teambestellungen",
+          "text": "Für Vereine & Fightwear-Marken"
+        }
+      },
+      "si-gbp-1001": {
+        "handle": {
+          "title": "Tragegriff",
+          "text": "Bequem zum Training"
+        },
+        "kit": {
+          "title": "Alles dabei",
+          "text": "Platz für Gi, Gürtel & Ausrüstung"
+        },
+        "pocket": {
+          "title": "Seitentaschen",
+          "text": "Flasche und Kleinteile"
+        },
+        "brand": {
+          "title": "Ihr Branding",
+          "text": "Vereinslogo auf der Front"
+        }
+      }
+    }
+  },
+  "Film": {
+    "chapters": {
+      "fabric": "Stoff",
+      "uniforms": "Anzüge",
+      "custom": "Branding",
+      "collection": "Kollektion",
+      "belts": "Gürtel",
+      "factory": "Fabrik",
+      "export": "Export"
+    },
+    "fabric": {
+      "eyebrow": "01 · Stoff",
+      "titleA": "Selbst",
+      "titleB": "gewebt.",
+      "text": "Eigene Abteilungen für Weberei, Strickerei und Färberei: Wir kontrollieren den Stoff vom ersten Faden an.",
+      "academy": "Judo · Academy",
+      "challenger": "Judo · Challenger",
+      "winner": "Judo · Winner",
+      "details": {
+        "label": "Gewebtes Markenetikett",
+        "fabric": "Pearl-Weave-Stoff",
+        "embroidery": "Bruststickerei",
+        "belt": "Graduierungsgürtel",
+        "drawstring": "Kordelzug-Bund",
+        "pants": "Ripstop-Hose"
+      }
+    },
+    "uniforms": {
+      "eyebrow": "02 · Anzüge",
+      "titleA": "Eine Fabrik.",
+      "titleB": "Jede Disziplin.",
+      "allCategories": "Alle Kategorien ansehen",
+      "disciplines": [
+        "Jiu-Jitsu",
+        "Judo",
+        "Karate",
+        "Taekwondo",
+        "Sambo"
+      ],
+      "facts": [
+        "Pearl- & Gold-Weave · 280–400 g/m²",
+        "450 · 550 · 700 g/m²",
+        "10 oz Canvas",
+        "Mischgewebe oder 100 % Baumwolle",
+        "Jacken & Shorts in Rot und Blau"
+      ]
+    },
+    "custom": {
+      "eyebrow": "03 · Ihre Marke",
+      "titleA": "Ihr Design,",
+      "titleB": "eingenäht.",
+      "text": "Senden Sie uns das Design Ihres Vereins oder Ihrer Marke. Wir platzieren es, wo Sie möchten, fertigen ein erstes Muster und produzieren unter Ihrem Namen.",
+      "steps": [
+        "Design senden",
+        "Design-Entwurf",
+        "Muster freigeben",
+        "Produktion & Versand"
+      ],
+      "methodsTitle": "So wird es aufgebracht",
+      "methods": [
+        "Stickerei",
+        "Gewebter Patch",
+        "Siebdruck",
+        "Sublimation"
+      ],
+      "stepsTitle": "So funktioniert es",
+      "places": {
+        "collar": "Kragenetikett",
+        "chest": "Brust",
+        "sleeve": "Ärmel",
+        "belt": "Gürtel",
+        "thigh": "Hose · Oberschenkel",
+        "pants": "Hosenbein"
+      }
+    },
+    "collection": {
+      "eyebrow": "04 · Kollektion",
+      "titleA": "Die ganze",
+      "titleB": "Ausrüstung.",
+      "also": "Für Details auf ein Produkt tippen · Außerdem:",
+      "alsoList": "Rashguards · Hoodies · Ringertrikots · Leggings · Sport-BHs"
+    },
+    "belts": {
+      "eyebrow": "05 · Gürtel",
+      "title": "Jeder Rang.",
+      "titleA": "Gürtel für",
+      "titleB": "jeden Rang.",
+      "ranks": [
+        "Weiß",
+        "Blau",
+        "Lila",
+        "Braun",
+        "Schwarz"
+      ],
+      "rank": "Rang {n}"
+    },
+    "factory": {
+      "eyebrow": "06 · Fabrik",
+      "titleA": "Ein Dach.",
+      "titleB": "Zehn Abteilungen.",
+      "text": "Jeder Schritt findet im eigenen Haus in Gujranwala, Pakistan, statt.",
+      "staff": "Fachkräfte",
+      "clients": "Treue Kunden",
+      "iso": "Zertifiziert nach 9001:2015",
+      "since": "Anzüge seit"
+    },
+    "export": {
+      "eyebrow": "07 · Export",
+      "titleA": "Aus unserer Fabrik",
+      "titleB": "auf Ihre Matte.",
+      "origin": "Gujranwala, Pakistan",
+      "countries": {
+        "kr": "Südkorea",
+        "it": "Italien",
+        "de": "Deutschland",
+        "no": "Norwegen",
+        "us": "USA"
+      },
+      "markets": {
+        "us": "USA",
+        "eu": "Europa · Norwegen · Deutschland · Italien",
+        "kr": "Südkorea"
+      }
+    }
+  },
+  "HomeCta": {
+    "eyebrow": "Beginnen Sie mit einem Muster",
+    "titleA": "Lassen Sie uns",
+    "titleB": "Ihren Anzug machen.",
+    "text": "Sagen Sie uns, was Sie brauchen: Anzüge, Gürtel, Rashguards oder Shorts, mit oder ohne Ihr Design."
+  },
+  "Departments": {
+    "design": {
+      "name": "Design & Entwicklung",
+      "text": "Ihr Entwurf wird zu produktionsreifen Designs und Tech-Packs."
+    },
+    "pattern": {
+      "name": "Schnittmuster",
+      "text": "Schnitte für jede Größe, von Kindern bis A5."
+    },
+    "fabric": {
+      "name": "Weberei",
+      "text": "Pearl-, Gold- und Ripstop-Gewebe von eigenen Webstühlen."
+    },
+    "knitting": {
+      "name": "Strickerei",
+      "text": "Strickstoffe für Rashguards, Shorts und Fightwear."
+    },
+    "dyeing": {
+      "name": "Färberei",
+      "text": "Farben passend zu Ihrer Marke, im eigenen Haus gefärbt."
+    },
+    "cutting": {
+      "name": "Zuschnitt",
+      "text": "Präziser Zuschnitt für gleichbleibende Größen."
+    },
+    "printing": {
+      "name": "Druck",
+      "text": "Stickerei, Siebdruck und vollflächige Sublimation."
+    },
+    "stitching": {
+      "name": "Näherei",
+      "text": "Verstärkte Nähte für hartes Training."
+    },
+    "inspection": {
+      "name": "Prüfung & Bügeln",
+      "text": "Jedes Teil wird geprüft, gebügelt und vermessen."
+    },
+    "packing": {
+      "name": "Verpackung",
+      "text": "Mit Ihren Etiketten verpackt, bereit für den Export."
+    }
+  },
+  "Catalog": {
+    "categories": {
+      "bjj-gis": {
+        "name": "BJJ-Uniformen",
+        "intro": "Brazilian-Jiu-Jitsu-Gis in Pearl-, Gold- und All-Play-Gewebe von 280 bis 400 g/m², mit Ripstop-Hosen. Auf Bestellung in Ihren Farben und mit dem Branding Ihres Vereins."
+      },
+      "judo-uniforms": {
+        "name": "Judoanzüge",
+        "intro": "Judoanzüge in drei Gewichten: 450 g/m² Academy, 550 g/m² Challenger und 700 g/m² Winner, mit Drillich-Hosen aus 100 % Baumwolle."
+      },
+      "karate-uniforms": {
+        "name": "Karateanzüge",
+        "intro": "Karateanzüge aus 10 oz Mischgewebe oder 100 % Baumwolle, in allen gängigen Farben, mit Gummi- oder Kordelbund."
+      },
+      "taekwondo-uniforms": {
+        "name": "Taekwondo-Anzüge",
+        "intro": "Taekwondo-Doboks aus Mischgewebe oder 100 % Baumwolle, in allen gängigen Farben, mit Gummibund-Hosen."
+      },
+      "sambo-uniforms": {
+        "name": "Sambo-Anzüge",
+        "intro": "Sambo-Jacken und -Shorts auf Bestellung in Rot und Blau."
+      },
+      "belts": {
+        "name": "BJJ-Gürtel",
+        "intro": "BJJ- und Judo-Gürtel, 350-g/m²-Gürtel aus Gi-Stoff und Freizeitgürtel, in allen Rangfarben und den Größen S bis 3XL."
+      },
+      "mma-shorts": {
+        "name": "MMA-Shorts",
+        "intro": "Vollflächig sublimierte MMA- und Grappling-Shorts aus Stretch-Polyester, bedruckt mit Ihren Designs und Teamfarben."
+      },
+      "rash-guards": {
+        "name": "Rash Guards",
+        "intro": "Kurz- und langärmelige Rash Guards aus Kompressionsstoff, sublimiert mit Ihren Designs und Gurtfarben."
+      },
+      "fight-wear": {
+        "name": "Fight Wear",
+        "intro": "Hoodies und Ringertrikots für Teams und Akademien, in Ihren Farben und mit Ihrem Branding."
+      },
+      "bags": {
+        "name": "Gi-Taschen",
+        "intro": "Gi-Rucksäcke mit Platz für Anzug, Gürtel und Ausrüstung, mit dem Logo Ihres Vereins."
+      }
+    },
+    "types": {
+      "bjjGi": "Jiu-Jitsu-Gi",
+      "judoUniform": "Judoanzug",
+      "karateUniform": "Karateanzug",
+      "taekwondoUniform": "Taekwondo-Anzug",
+      "samboUniform": "Sambo-Anzug",
+      "bjjBelt": "BJJ-Gürtel",
+      "giFabricBelt": "Gürtel aus 350-g/m²-Gi-Stoff",
+      "casualBelt": "Freizeitgürtel",
+      "judoBelt": "Judogürtel",
+      "mmaShorts": "MMA-Shorts",
+      "hoodie": "Hoodie",
+      "singlet": "Ringertrikot",
+      "giBag": "Gi-Rucksack"
+    },
+    "labels": {
+      "weave": "Gewebe",
+      "jacket": "Stoff",
+      "weight": "Gewicht",
+      "pants": "Hose",
+      "colours": "Farben",
+      "waist": "Bund",
+      "width": "Breite",
+      "sizes": "Größen",
+      "print": "Druck",
+      "use": "Einsatz"
+    },
+    "values": {
+      "pearl": "Pearl-Weave",
+      "gold": "Gold-Weave",
+      "allPlay": "All-Play-Weave",
+      "polyCotton": "Polyester-Baumwolle",
+      "cotton": "100 % Baumwolle",
+      "bambooCotton": "Bambus-Baumwolle",
+      "polyCottonOrCotton": "Polyester-Baumwolle oder 100 % Baumwolle",
+      "polyester": "Polyester",
+      "giFabric": "Gi-Stoff",
+      "ripstop": "Ripstop",
+      "ripstopCotton": "Ripstop, 100 % Baumwolle",
+      "ripstop10oz": "10 oz Ripstop, 100 % Baumwolle",
+      "drillCotton": "Drillich, 100 % Baumwolle",
+      "allRegular": "Alle gängigen Farben",
+      "allRanks": "Alle Rangfarben",
+      "redBlue": "Rot und Blau",
+      "elastic": "Gummibund",
+      "elasticOrDrawstring": "Gummi- oder Kordelbund",
+      "sToXxxl": "S bis 3XL",
+      "sublimated": "Vollflächige Sublimation",
+      "sambo": "Sambo-Training und Wettkampf",
+      "bjjRank": "BJJ-Graduierung",
+      "judoRank": "Judo-Graduierung",
+      "giAndGear": "Gi, Gürtel und Trainingsausrüstung"
+    },
+    "units": {
+      "gsm": "{n} g/m²",
+      "oz": "{n} oz",
+      "cm": "{n} cm"
+    }
+  },
+  "ProductsPage": {
+    "title": "Produkte",
+    "eyebrow": "Katalog",
+    "intro": "Jedes Produkt wird auf Bestellung in unserer eigenen Fabrik gefertigt, in Ihren Farben und mit Ihrem Branding. Wählen Sie eine Kategorie.",
+    "metaDescription": "BJJ-Gis, Judo-, Karate- und Taekwondo-Anzüge, Gürtel, Fightwear und Taschen, auf Bestellung mit Ihrem Branding.",
+    "searchLabel": "Produkte suchen",
+    "searchPlaceholder": "Nach Name oder Code suchen…",
+    "filterLabel": "Nach Kategorie filtern",
+    "noResults": "Keine Produkte gefunden.",
+    "clear": "Filter zurücksetzen",
+    "searchAll": "Katalog durchsuchen: Produkt, Code oder Sportart…",
+    "viewRange": "Sortiment ansehen",
+    "categoryLabel": "Kategorie",
+    "sortLabel": "Sortieren",
+    "sortDefault": "Empfohlen",
+    "sortCode": "Code A–Z",
+    "filters": "Filter",
+    "clearAll": "Alle zurücksetzen",
+    "pagination": "Seiten",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "allCategories": "Alle Kategorien",
+    "sortMost": "Meiste Produkte",
+    "sortName": "Name A–Z"
+  },
+  "CategoryPage": {
+    "metaDescription": "{name} auf Bestellung von Spotex International aus Pakistan, in Ihren Farben und mit Ihrem Branding."
+  },
+  "ProductPage": {
+    "specs": "Technische Daten",
+    "custom": "Individuell anpassen",
+    "customList": [
+      "Ihre Farben",
+      "Gesticktes oder gedrucktes Logo",
+      "Gewebte Etiketten und Patches",
+      "Eigene Verpackung"
+    ],
+    "moq": "Auf Bestellung gefertigt. Beginnen Sie mit einem Muster und bestellen Sie dann für Ihren Verein oder Ihre Marke.",
+    "related": "Mehr aus dieser Serie",
+    "code": "Artikelnr.",
+    "whatsappText": "Hallo Spotex, ich interessiere mich für {code} ({name}).",
+    "metaDescription": "{name} {code}: {specs}. Auf Bestellung von Spotex International mit Ihrem Branding."
+  },
+  "PrivateLabel": {
+    "metaTitle": "Kampfsportanzüge als Eigenmarke",
+    "metaDescription": "Starten Sie Ihre eigene BJJ-Gi- oder Kampfsportmarke. Ihr Design, Ihre Etiketten, gefertigt in unserer eigenen Fabrik.",
+    "eyebrow": "Eigenmarke",
+    "titleA": "Ihre Marke.",
+    "titleB": "Unsere Fabrik.",
+    "intro": "Wir fertigen Anzüge und Ausrüstung für Vereine, Schulen und Marken unter deren eigenem Namen. Sie bringen die Idee, wir übernehmen Stoff, Produktion und Verpackung.",
+    "stepsTitle": "So funktioniert es",
+    "steps": [
+      {
+        "title": "Idee teilen",
+        "text": "Senden Sie uns Design, Farben und die gewünschten Produkte."
+      },
+      {
+        "title": "Design & Muster",
+        "text": "Wir bereiten das Design vor und fertigen ein erstes Muster, mit oder ohne Ihr Design."
+      },
+      {
+        "title": "Freigabe",
+        "text": "Sie prüfen das Muster, und wir passen an, bis alles stimmt."
+      },
+      {
+        "title": "Produktion",
+        "text": "Ihre Bestellung entsteht in unserer Fabrik, vom Stoff bis zum Finish."
+      },
+      {
+        "title": "Verpackung & Versand",
+        "text": "Mit Ihren Etiketten verpackt und bis zu Ihnen geliefert."
+      }
+    ],
+    "optionsTitle": "Was Sie anpassen können",
+    "options": [
+      {
+        "title": "Stoff & Gewicht",
+        "text": "Pearl-, Gold-, Ripstop- oder All-Play-Gewebe von 280 bis 700 g/m²."
+      },
+      {
+        "title": "Farben",
+        "text": "Stoff passend zu Ihren Markenfarben gefärbt."
+      },
+      {
+        "title": "Logos",
+        "text": "Stickerei, Siebdruck, Sublimation und Patches."
+      },
+      {
+        "title": "Etiketten & Verpackung",
+        "text": "Gewebte Etiketten, Hängeetiketten und Markenverpackung."
+      }
+    ]
+  },
+  "FactoryPage": {
+    "metaTitle": "Unsere Fabrik in Gujranwala",
+    "metaDescription": "Zehn eigene Abteilungen, von Weberei und Färberei bis Näherei und Verpackung. So fertigt Spotex Kampfsportanzüge.",
+    "eyebrow": "Unsere Fabrik",
+    "titleA": "Ein Dach.",
+    "titleB": "Zehn Abteilungen.",
+    "intro": "Viele Anbieter kaufen Stoff zu und lassen extern nähen. Wir erledigen jeden Schritt selbst in Gujranwala, Pakistan, und kontrollieren so Qualität, Farbe und Lieferzeit.",
+    "qualityTitle": "Qualität und Prüfung",
+    "quality": "Unser F&E- und Textilprüflabor prüft Materialien und fertige Produkte vor dem Versand. Spotex ist nach ISO 9001:2015 zertifiziert.",
+    "csrTitle": "Verantwortung",
+    "csr": [
+      "Ein kostenloses IT-Ausbildungszentrum für Menschen aus der Region und Mitarbeitende, mit mehr als 1.000 Absolventen.",
+      "Eine Lebensversicherung für alle Mitarbeitenden.",
+      "Kostenlose Brandschutzschulungen und Sportangebote für die Gemeinde."
+    ]
+  },
+  "AboutPage": {
+    "metaTitle": "Über Spotex International",
+    "metaDescription": "Hersteller von Kampfsportanzügen in Gujranwala, Pakistan. Gis und Gürtel seit 1989.",
+    "eyebrow": "Über uns",
+    "titleA": "Gefertigt in Gujranwala",
+    "titleB": "seit 1989.",
+    "intro": "Spotex International begann als kleine Werkstatt in Gujranwala, Pakistan. Heute fertigen wir Kampfsportanzüge, Gürtel und Fightwear für Vereine, Schulen und Marken im Ausland, mit jedem Produktionsschritt unter unserem eigenen Dach.",
+    "factsTitle": "Auf einen Blick",
+    "facts": {
+      "since": "Gegründet",
+      "staff": "Fachkräfte",
+      "clients": "Kunden",
+      "departments": "Eigene Abteilungen"
+    },
+    "valuesTitle": "Wofür wir stehen",
+    "values": [
+      {
+        "title": "Eigene Fertigung",
+        "text": "Stoff, Farbe, Zuschnitt und Näherei unter einem Dach."
+      },
+      {
+        "title": "Erst ein Muster",
+        "text": "Jeder neue Kunde kann mit einem einzelnen Muster beginnen."
+      },
+      {
+        "title": "Ihre Marke",
+        "text": "Wir fertigen unter Ihrem Namen, mit Ihren Etiketten."
+      }
+    ]
+  },
+  "ContactPage": {
+    "metaTitle": "Kontakt zu Spotex International",
+    "metaDescription": "Fordern Sie ein Angebot oder ein Muster für Kampfsportanzüge an. Kontakt per WhatsApp oder E-Mail.",
+    "eyebrow": "Kontakt",
+    "titleA": "Sprechen wir über",
+    "titleB": "Ihre Bestellung.",
+    "intro": "Sagen Sie uns, was Sie brauchen und in welcher Menge, und unser Vertriebsteam meldet sich bei Ihnen.",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "whatsapp": "WhatsApp",
+    "formSoon": "Das Online-Anfrageformular folgt in Kürze. Bis dahin schreiben Sie uns gern per WhatsApp oder E-Mail."
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Diese Seite existiert nicht oder wurde verschoben.",
+    "back": "Zur Startseite"
+  }
+}

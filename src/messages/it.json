@@ -1,0 +1,594 @@
+{
+  "Meta": {
+    "siteName": "Spotex International",
+    "homeTitle": "Spotex International · Produttore di divise per arti marziali",
+    "homeDescription": "Kimono BJJ, judo, karate e taekwondo e cinture, prodotti nella nostra fabbrica in Pakistan e personalizzati per palestre, club e marchi in Italia e in Europa."
+  },
+  "Nav": {
+    "home": "Home",
+    "products": "Prodotti",
+    "privateLabel": "Su misura",
+    "factory": "Fabbrica",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "menu": "Menu",
+    "close": "Chiudi",
+    "language": "Lingua",
+    "skip": "Vai al contenuto"
+  },
+  "Common": {
+    "close": "Chiudi",
+    "viewDetails": "Tutti i dettagli",
+    "viewAllProducts": "Vedi tutti i prodotti",
+    "quickNote": "Prodotto nella nostra fabbrica. Logo, colori e taglie su richiesta, con un campione prima.",
+    "requestQuote": "Richiedi un preventivo",
+    "requestSample": "Richiedi un campione",
+    "whatsapp": "Scrivici su WhatsApp",
+    "viewCollection": "Vedi la collezione",
+    "viewAll": "Vedi tutto",
+    "viewProducts": "Vedi i prodotti",
+    "products": "{count, plural, one {# prodotto} other {# prodotti}}",
+    "scroll": "Scorri",
+    "learnMore": "Scopri di più"
+  },
+  "Footer": {
+    "tagline": "Divise per arti marziali tessute, tagliate e cucite nella nostra fabbrica a Gujranwala, in Pakistan, dal 1989.",
+    "explore": "Esplora",
+    "categories": "Prodotti",
+    "contact": "Contatti",
+    "rights": "Tutti i diritti riservati.",
+    "since": "Fabbrica propria dal {year}",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "madeIn": "Prodotto a Gujranwala, Pakistan"
+  },
+  "Hero": {
+    "introTop": "Produttore ed esportatore di divise per arti marziali",
+    "introFacts": [
+      "Fabbrica propria dal 1989",
+      "Gujranwala · Pakistan",
+      "Export in USA ed Europa"
+    ],
+    "eyebrow": "Spotex International",
+    "titleA": "Divise personalizzate,",
+    "titleB": "prodotte da noi.",
+    "copy": "Kimono da jiu-jitsu, judo, karate e taekwondo prodotti nella nostra fabbrica, con il marchio della tua palestra o del tuo brand.",
+    "callouts": {
+      "si-jju-1001": {
+        "label": {
+          "title": "Etichette tessute",
+          "text": "Il tuo marchio sul colletto"
+        },
+        "weave": {
+          "title": "Trama pearl",
+          "text": "Giacca 280 g/m² poliestere-cotone"
+        },
+        "logo": {
+          "title": "Il tuo logo",
+          "text": "Ricamato su petto, maniche e schiena"
+        },
+        "pants": {
+          "title": "Pantaloni ripstop",
+          "text": "Leggeri e resistenti agli strappi"
+        },
+        "belt": {
+          "title": "Cinture abbinate",
+          "text": "Ogni colore di grado, prodotte da noi"
+        }
+      },
+      "si-ju-1005": {
+        "dye": {
+          "title": "I tuoi colori",
+          "text": "Blu, bianco o tinto su richiesta"
+        },
+        "weight": {
+          "title": "550 g/m²",
+          "text": "Trama Challenger poliestere-cotone"
+        },
+        "belt": {
+          "title": "Cinture di grado",
+          "text": "Cinture da judo in ogni colore"
+        },
+        "range": {
+          "title": "Tre grammature",
+          "text": "450 · 550 · 700 g/m²"
+        },
+        "pants": {
+          "title": "Pantaloni drill",
+          "text": "100% cotone"
+        }
+      },
+      "si-jju-1002": {
+        "stitch": {
+          "title": "Cuciture a contrasto",
+          "text": "Filo nel colore del tuo marchio"
+        },
+        "patch": {
+          "title": "Patch sulla spalla",
+          "text": "Lo stemma della tua palestra"
+        },
+        "logo": {
+          "title": "Ricamo sul petto",
+          "text": "Il tuo logo cucito"
+        },
+        "made": {
+          "title": "Prodotto in casa",
+          "text": "Tessuto, tagliato e cucito a Gujranwala"
+        },
+        "belt": {
+          "title": "Cinture abbinate",
+          "text": "Ogni colore di grado, prodotte da noi"
+        }
+      },
+      "si-ms-1001": {
+        "waist": {
+          "title": "Logo in vita",
+          "text": "Il tuo marchio sull'elastico"
+        },
+        "print": {
+          "title": "Sublimazione totale",
+          "text": "Ogni grafica, ogni colore"
+        },
+        "fabric": {
+          "title": "Poliestere",
+          "text": "Tessuto fightwear leggero"
+        },
+        "team": {
+          "title": "Ordini per squadre",
+          "text": "Per palestre e marchi fightwear"
+        }
+      },
+      "si-gbp-1001": {
+        "handle": {
+          "title": "Maniglia",
+          "text": "Comoda da portare in palestra"
+        },
+        "kit": {
+          "title": "Tutto il kit",
+          "text": "Spazio per kimono, cintura e attrezzatura"
+        },
+        "pocket": {
+          "title": "Tasche laterali",
+          "text": "Borraccia e piccoli oggetti"
+        },
+        "brand": {
+          "title": "Il tuo marchio",
+          "text": "Logo della palestra sul fronte"
+        }
+      }
+    }
+  },
+  "Film": {
+    "chapters": {
+      "fabric": "Tessuto",
+      "uniforms": "Divise",
+      "custom": "Personalizza",
+      "collection": "Collezione",
+      "belts": "Cinture",
+      "factory": "Fabbrica",
+      "export": "Export"
+    },
+    "fabric": {
+      "eyebrow": "01 · Tessuto",
+      "titleA": "Tessuto",
+      "titleB": "da noi.",
+      "text": "Reparti interni di tessitura, maglieria e tintoria: controlliamo il tessuto dal primo filo.",
+      "academy": "Judo · Academy",
+      "challenger": "Judo · Challenger",
+      "winner": "Judo · Winner",
+      "details": {
+        "label": "Etichetta tessuta",
+        "fabric": "Tessuto trama pearl",
+        "embroidery": "Ricamo sul petto",
+        "belt": "Cintura di grado",
+        "drawstring": "Vita con coulisse",
+        "pants": "Pantaloni ripstop"
+      }
+    },
+    "uniforms": {
+      "eyebrow": "02 · Divise",
+      "titleA": "Una fabbrica.",
+      "titleB": "Ogni disciplina.",
+      "allCategories": "Vedi tutte le categorie",
+      "disciplines": [
+        "Jiu-jitsu",
+        "Judo",
+        "Karate",
+        "Taekwondo",
+        "Sambo"
+      ],
+      "facts": [
+        "Trama pearl e gold · 280–400 g/m²",
+        "450 · 550 · 700 g/m²",
+        "Tela 10 oz",
+        "Poliestere-cotone o 100% cotone",
+        "Giacche e pantaloncini rossi e blu"
+      ]
+    },
+    "custom": {
+      "eyebrow": "03 · Il tuo marchio",
+      "titleA": "La tua grafica,",
+      "titleB": "cucita addosso.",
+      "text": "Inviaci la grafica della tua palestra o del tuo marchio. La posizioniamo dove vuoi, realizziamo un primo campione e produciamo con il tuo nome.",
+      "steps": [
+        "Invia la grafica",
+        "Bozza del design",
+        "Approva il campione",
+        "Produzione e spedizione"
+      ],
+      "methodsTitle": "Come viene applicato",
+      "methods": [
+        "Ricamo",
+        "Patch tessuta",
+        "Serigrafia",
+        "Sublimazione"
+      ],
+      "stepsTitle": "Come funziona",
+      "places": {
+        "collar": "Etichetta collo",
+        "chest": "Petto",
+        "sleeve": "Manica",
+        "belt": "Cintura",
+        "thigh": "Coscia pantaloni",
+        "pants": "Gamba"
+      }
+    },
+    "collection": {
+      "eyebrow": "04 · Collezione",
+      "titleA": "Il kit",
+      "titleB": "completo.",
+      "also": "Tocca un prodotto per i dettagli · Produciamo anche:",
+      "alsoList": "Rashguard · Felpe · Body da lotta · Leggings · Reggiseni sportivi"
+    },
+    "belts": {
+      "eyebrow": "05 · Cinture",
+      "title": "Ogni grado.",
+      "titleA": "Cinture per",
+      "titleB": "ogni grado.",
+      "ranks": [
+        "Bianca",
+        "Blu",
+        "Viola",
+        "Marrone",
+        "Nera"
+      ],
+      "rank": "Grado {n}"
+    },
+    "factory": {
+      "eyebrow": "06 · Fabbrica",
+      "titleA": "Un solo tetto.",
+      "titleB": "Dieci reparti.",
+      "text": "Ogni fase avviene all'interno della nostra fabbrica a Gujranwala, in Pakistan.",
+      "staff": "Personale qualificato",
+      "clients": "Clienti fedeli",
+      "iso": "Certificata 9001:2015",
+      "since": "Produciamo divise dal"
+    },
+    "export": {
+      "eyebrow": "07 · Export",
+      "titleA": "Dalla nostra fabbrica",
+      "titleB": "al tuo tatami.",
+      "origin": "Gujranwala, Pakistan",
+      "countries": {
+        "kr": "Corea del Sud",
+        "it": "Italia",
+        "de": "Germania",
+        "no": "Norvegia",
+        "us": "Stati Uniti"
+      },
+      "markets": {
+        "us": "Stati Uniti",
+        "eu": "Europa · Norvegia · Germania · Italia",
+        "kr": "Corea del Sud"
+      }
+    }
+  },
+  "HomeCta": {
+    "eyebrow": "Inizia con un campione",
+    "titleA": "Creiamo insieme",
+    "titleB": "la tua divisa.",
+    "text": "Dicci di cosa hai bisogno: divise, cinture, rashguard o pantaloncini, con o senza la tua grafica."
+  },
+  "Departments": {
+    "design": {
+      "name": "Design e sviluppo",
+      "text": "La tua grafica trasformata in disegni e schede tecniche pronti per la produzione."
+    },
+    "pattern": {
+      "name": "Modelleria",
+      "text": "Modelli sviluppati per ogni taglia, dai bambini all'A5."
+    },
+    "fabric": {
+      "name": "Tessitura",
+      "text": "Trame pearl, gold e ripstop dai nostri telai."
+    },
+    "knitting": {
+      "name": "Maglieria",
+      "text": "Tessuti a maglia per rashguard, pantaloncini e fightwear."
+    },
+    "dyeing": {
+      "name": "Tintoria",
+      "text": "Colori abbinati al tuo marchio, tinti in casa."
+    },
+    "cutting": {
+      "name": "Taglio",
+      "text": "Taglio preciso per taglie costanti in ogni ordine."
+    },
+    "printing": {
+      "name": "Stampa",
+      "text": "Ricamo, serigrafia e sublimazione totale."
+    },
+    "stitching": {
+      "name": "Cucitura",
+      "text": "Cuciture rinforzate per allenamenti duri."
+    },
+    "inspection": {
+      "name": "Controllo e stiratura",
+      "text": "Ogni capo viene controllato, stirato e misurato."
+    },
+    "packing": {
+      "name": "Imballaggio",
+      "text": "Imballato con le tue etichette, pronto per l'export."
+    }
+  },
+  "Catalog": {
+    "categories": {
+      "bjj-gis": {
+        "name": "Uniformi BJJ",
+        "intro": "Kimono da Brazilian jiu-jitsu in trama pearl, gold e all-play da 280 a 400 g/m², con pantaloni ripstop. Su ordinazione nei tuoi colori e con il marchio della tua palestra."
+      },
+      "judo-uniforms": {
+        "name": "Judogi",
+        "intro": "Judogi in tre grammature: 450 g/m² Academy, 550 g/m² Challenger e 700 g/m² Winner, con pantaloni in drill 100% cotone."
+      },
+      "karate-uniforms": {
+        "name": "Karategi",
+        "intro": "Karategi in 10 oz poliestere-cotone o 100% cotone, in tutti i colori standard, con vita elastica o coulisse."
+      },
+      "taekwondo-uniforms": {
+        "name": "Divise da taekwondo",
+        "intro": "Dobok da taekwondo in poliestere-cotone o 100% cotone, in tutti i colori standard, con pantaloni a vita elastica."
+      },
+      "sambo-uniforms": {
+        "name": "Divise da sambo",
+        "intro": "Giacche e pantaloncini da sambo su ordinazione in rosso e blu."
+      },
+      "belts": {
+        "name": "Cinture BJJ",
+        "intro": "Cinture per BJJ e judo, cinture in tessuto gi da 350 g/m² e cinture casual, in tutti i colori di grado e nelle taglie dalla S alla 3XL."
+      },
+      "mma-shorts": {
+        "name": "Pantaloncini MMA",
+        "intro": "Pantaloncini MMA e grappling in poliestere elasticizzato a sublimazione totale, con le tue grafiche e i colori della squadra."
+      },
+      "rash-guards": {
+        "name": "Rash guard",
+        "intro": "Rash guard a manica corta e lunga in tessuto compressivo, sublimati con le tue grafiche e i colori delle cinture."
+      },
+      "fight-wear": {
+        "name": "Fight wear",
+        "intro": "Felpe e body da lotta per team e accademie, con i tuoi colori e il tuo marchio."
+      },
+      "bags": {
+        "name": "Borse per gi",
+        "intro": "Zaini per kimono con spazio per divisa, cintura e attrezzatura, con il logo della tua palestra."
+      }
+    },
+    "types": {
+      "bjjGi": "Kimono da jiu-jitsu",
+      "judoUniform": "Judogi",
+      "karateUniform": "Karategi",
+      "taekwondoUniform": "Dobok da taekwondo",
+      "samboUniform": "Divisa da sambo",
+      "bjjBelt": "Cintura BJJ",
+      "giFabricBelt": "Cintura in tessuto gi da 350 g/m²",
+      "casualBelt": "Cintura casual",
+      "judoBelt": "Cintura da judo",
+      "mmaShorts": "Pantaloncini MMA",
+      "hoodie": "Felpa con cappuccio",
+      "singlet": "Body da lotta",
+      "giBag": "Zaino per kimono"
+    },
+    "labels": {
+      "weave": "Trama",
+      "jacket": "Tessuto",
+      "weight": "Grammatura",
+      "pants": "Pantaloni",
+      "colours": "Colori",
+      "waist": "Vita",
+      "width": "Larghezza",
+      "sizes": "Taglie",
+      "print": "Stampa",
+      "use": "Uso"
+    },
+    "values": {
+      "pearl": "Trama pearl",
+      "gold": "Trama gold",
+      "allPlay": "Trama all-play",
+      "polyCotton": "Poliestere-cotone",
+      "cotton": "100% cotone",
+      "bambooCotton": "Cotone di bambù",
+      "polyCottonOrCotton": "Poliestere-cotone o 100% cotone",
+      "polyester": "Poliestere",
+      "giFabric": "Tessuto gi",
+      "ripstop": "Ripstop",
+      "ripstopCotton": "Ripstop, 100% cotone",
+      "ripstop10oz": "Ripstop 10 oz, 100% cotone",
+      "drillCotton": "Drill, 100% cotone",
+      "allRegular": "Tutti i colori standard",
+      "allRanks": "Tutti i colori di grado",
+      "redBlue": "Rosso e blu",
+      "elastic": "Elastico",
+      "elasticOrDrawstring": "Elastico o coulisse",
+      "sToXxxl": "Dalla S alla 3XL",
+      "sublimated": "Sublimazione totale",
+      "sambo": "Allenamento e gara di sambo",
+      "bjjRank": "Gradi BJJ",
+      "judoRank": "Gradi judo",
+      "giAndGear": "Kimono, cintura e attrezzatura"
+    },
+    "units": {
+      "gsm": "{n} g/m²",
+      "oz": "{n} oz",
+      "cm": "{n} cm"
+    }
+  },
+  "ProductsPage": {
+    "title": "Prodotti",
+    "eyebrow": "Catalogo",
+    "intro": "Ogni prodotto è realizzato su ordinazione nella nostra fabbrica, nei tuoi colori e con il tuo marchio. Scegli una categoria.",
+    "metaDescription": "Kimono BJJ, judogi, karategi e dobok, cinture, fightwear e borse, su ordinazione con il tuo marchio.",
+    "searchLabel": "Cerca prodotti",
+    "searchPlaceholder": "Cerca per nome o codice…",
+    "filterLabel": "Filtra per categoria",
+    "noResults": "Nessun prodotto corrisponde alla ricerca.",
+    "clear": "Azzera filtri",
+    "searchAll": "Cerca nel catalogo: prodotto, codice o sport…",
+    "viewRange": "Vedi la gamma",
+    "categoryLabel": "Categoria",
+    "sortLabel": "Ordina",
+    "sortDefault": "In evidenza",
+    "sortCode": "Codice A–Z",
+    "filters": "Filtri",
+    "clearAll": "Azzera tutto",
+    "pagination": "Pagine",
+    "prev": "Precedente",
+    "next": "Successiva",
+    "allCategories": "Tutte le categorie",
+    "sortMost": "Più prodotti",
+    "sortName": "Nome A–Z"
+  },
+  "CategoryPage": {
+    "metaDescription": "{name} su ordinazione da Spotex International in Pakistan, nei tuoi colori e con il tuo marchio."
+  },
+  "ProductPage": {
+    "specs": "Specifiche",
+    "custom": "Personalizzalo",
+    "customList": [
+      "I tuoi colori",
+      "Logo ricamato o stampato",
+      "Etichette tessute e patch",
+      "Confezione personalizzata"
+    ],
+    "moq": "Prodotto su ordinazione. Inizia con un campione, poi ordina per la tua palestra o il tuo marchio.",
+    "related": "Altro da questa linea",
+    "code": "Codice",
+    "whatsappText": "Buongiorno Spotex, sono interessato a {code} ({name}).",
+    "metaDescription": "{name} {code}: {specs}. Su ordinazione da Spotex International con il tuo marchio."
+  },
+  "PrivateLabel": {
+    "metaTitle": "Divise per arti marziali a marchio privato",
+    "metaDescription": "Lancia il tuo marchio di kimono BJJ o di arti marziali. Il tuo design, le tue etichette, prodotti nella nostra fabbrica.",
+    "eyebrow": "Marchio privato",
+    "titleA": "Il tuo marchio.",
+    "titleB": "La nostra fabbrica.",
+    "intro": "Produciamo divise e attrezzatura per palestre, club e marchi con il loro nome. Tu porti l'idea, noi pensiamo a tessuto, produzione e imballaggio.",
+    "stepsTitle": "Come funziona",
+    "steps": [
+      {
+        "title": "Condividi l'idea",
+        "text": "Inviaci grafica, colori e i prodotti che ti servono."
+      },
+      {
+        "title": "Design e campione",
+        "text": "Prepariamo il design e un primo campione, con o senza la tua grafica."
+      },
+      {
+        "title": "Approvazione",
+        "text": "Controlli il campione e lo modifichiamo finché non è perfetto."
+      },
+      {
+        "title": "Produzione",
+        "text": "Il tuo ordine viene realizzato nella nostra fabbrica, dal tessuto alla finitura."
+      },
+      {
+        "title": "Imballaggio e spedizione",
+        "text": "Imballato con le tue etichette e spedito fino a te."
+      }
+    ],
+    "optionsTitle": "Cosa puoi personalizzare",
+    "options": [
+      {
+        "title": "Tessuto e grammatura",
+        "text": "Trame pearl, gold, ripstop o all-play da 280 a 700 g/m²."
+      },
+      {
+        "title": "Colori",
+        "text": "Tessuto tinto nei colori del tuo marchio."
+      },
+      {
+        "title": "Loghi",
+        "text": "Ricamo, serigrafia, sublimazione e patch."
+      },
+      {
+        "title": "Etichette e confezione",
+        "text": "Etichette tessute, cartellini e confezioni con il tuo marchio."
+      }
+    ]
+  },
+  "FactoryPage": {
+    "metaTitle": "La nostra fabbrica a Gujranwala",
+    "metaDescription": "Dieci reparti interni, dalla tessitura e tintura alla cucitura e all'imballaggio. Scopri come Spotex produce divise per arti marziali.",
+    "eyebrow": "La nostra fabbrica",
+    "titleA": "Un solo tetto.",
+    "titleB": "Dieci reparti.",
+    "intro": "Molti fornitori comprano il tessuto e affidano la cucitura all'esterno. Noi facciamo ogni fase in casa a Gujranwala, in Pakistan, e così controlliamo qualità, colore e tempi di consegna.",
+    "qualityTitle": "Qualità e test",
+    "quality": "Il nostro laboratorio di ricerca e test tessili controlla materiali e prodotti finiti prima della spedizione. Spotex è certificata ISO 9001:2015.",
+    "csrTitle": "Responsabilità",
+    "csr": [
+      "Un centro di formazione informatica gratuito per la comunità locale e i dipendenti, con oltre 1.000 diplomati.",
+      "Assicurazione sulla vita per tutti i dipendenti.",
+      "Corsi antincendio gratuiti e attività sportive per la comunità locale."
+    ]
+  },
+  "AboutPage": {
+    "metaTitle": "Chi è Spotex International",
+    "metaDescription": "Produttore di divise per arti marziali a Gujranwala, in Pakistan. Kimono e cinture dal 1989.",
+    "eyebrow": "Chi siamo",
+    "titleA": "Prodotto a Gujranwala",
+    "titleB": "dal 1989.",
+    "intro": "Spotex International è nata come piccolo laboratorio a Gujranwala, in Pakistan. Oggi produciamo divise per arti marziali, cinture e fightwear per palestre, club e marchi all'estero, con ogni fase della produzione sotto il nostro tetto.",
+    "factsTitle": "In breve",
+    "facts": {
+      "since": "Fondata",
+      "staff": "Personale qualificato",
+      "clients": "Clienti",
+      "departments": "Reparti interni"
+    },
+    "valuesTitle": "In cosa crediamo",
+    "values": [
+      {
+        "title": "Produzione interna",
+        "text": "Tessuto, colore, taglio e cucitura sotto un solo tetto."
+      },
+      {
+        "title": "Prima il campione",
+        "text": "Ogni nuovo cliente può iniziare con un solo campione."
+      },
+      {
+        "title": "Il tuo marchio",
+        "text": "Produciamo con il tuo nome e le tue etichette."
+      }
+    ]
+  },
+  "ContactPage": {
+    "metaTitle": "Contatta Spotex International",
+    "metaDescription": "Richiedi un preventivo o un campione di divise per arti marziali. Contattaci su WhatsApp o via email.",
+    "eyebrow": "Contatti",
+    "titleA": "Parliamo del",
+    "titleB": "tuo ordine.",
+    "intro": "Dicci di cosa hai bisogno e in che quantità: il nostro team commerciale ti risponderà.",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "formSoon": "Il modulo di preventivo online arriverà a breve. Nel frattempo scrivici su WhatsApp o via email."
+  },
+  "NotFound": {
+    "title": "Pagina non trovata",
+    "text": "Questa pagina non esiste o è stata spostata.",
+    "back": "Torna alla home"
+  }
+}
